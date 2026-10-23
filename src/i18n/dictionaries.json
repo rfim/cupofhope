@@ -1,0 +1,279 @@
+{
+  "en": {
+    "metadata": {
+      "home_title": "Cup of Hope | Build Home Bring Hope",
+      "home_description": "Cup of Hope: a warm, inclusive community café and event space in Surabaya. Where hope, connection, and meaningful events bring people together. Find your place.",
+      "about_title": "About Us | Cup of Hope",
+      "about_description": "At Cup of Hope we put God at the centre of everything. We build home and bring hope to the people of Surabaya through our community café, events, and connection. Discover our story.",
+      "events_title": "Events | Cup of Hope",
+      "events_description": "Discover meaningful events and gatherings at Cup of Hope in Surabaya. Join our community to connect, learn, and find hope through workshops, talks, and shared moments.",
+      "articles_title": "Articles | Cup of Hope",
+      "articles_description": "Read inspiring stories and articles from Cup of Hope. Explore community journeys, hope, and connection through words from our team, partners, and guests in Surabaya.",
+      "contact_title": "Contact | Cup of Hope",
+      "contact_description": "Get in touch with Cup of Hope. We would love to hear from you.",
+      "services_title": "Services | Cup of Hope",
+      "services_description": "Explore how Cup of Hope serves our community in Surabaya through our café, event space, and programs. Connection, hope, and belonging for everyone.",
+      "our_team_title": "Our Team | Cup of Hope",
+      "our_team_description": "Meet the people behind Cup of Hope. Our team brings hope, connection, and community to Surabaya through our café and events. Get to know us."
+    },
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "events": "Events",
+      "article": "Article"
+    },
+    "cta": {
+      "contact_us": "Contact Us",
+      "get_involved": "Get Connected",
+      "view_full_story": "View Full Story",
+      "view_event": "View Event",
+      "load_more": "Load More",
+      "register_now": "Register Now"
+    },
+    "footer": {
+      "description": "Creating a place where people belong, feel at home, and discover purpose through community and faith.",
+      "copyright": "Cup of Hope. All rights reserved.",
+      "menu": "Menu",
+      "menu_home": "Home",
+      "menu_about": "About Us",
+      "menu_article": "Article",
+      "menu_events": "Events",
+      "faith_mission": "Faith & Mission",
+      "our_story": "Our Story",
+      "get_involved": "Get Connected",
+      "contact": "Contact"
+    },
+    "event": {
+      "location": "Location",
+      "date": "Date",
+      "time": "Time",
+      "ticket_price": "Ticket Price",
+      "includes": "Includes",
+      "related_title": "Related Event"
+    },
+    "article": {
+      "related_title": "Related Article"
+    },
+    "error_title": "Page Not Found",
+    "error_subtitle": "Sorry, the page you are looking for doesn't exist or has been moved.",
+    "error_button": "Return Home",
+    "whatsapp": "Contact Us",
+    "home": {
+      "hero_title": [
+        "Build Home,",
+        "Bring Hope"
+      ],
+      "hero_subtitle": "A home for everyone to rest and connect— and find their refreshment. A safe place where hope meets people.",
+      "about_title": "About Us",
+      "about_body": "Cup of Hope isn't an ordinary coffee shop. Our story began in 2021, right in the middle of the Covid-19 pandemic — a season when fear, loss, and uncertainty filled the world. While many were forced to close their doors, God speaks to us to open ours with a simple but bold purpose: to bring hope to our city and the people in it.",
+      "card_title": [
+        "Our Card",
+        "of Hope"
+      ],
+      "card_body": "Hope is something we need to live out every day. These cards of hope are downloaded and written by our team regularly. Every month, we write new words of encouragement on our cards, and we also change the design. The words often show up at just the right moment, and have blessed so many lives.",
+      "testimonials": [
+        {
+          "quote": "You will make it guys, because God carries you. Don't you worry, He is in control.",
+          "story": "For Joy, it was deeply personal. Just five minutes before stepping into Cup of Hope, she had been telling her friends how anxious she felt about an upcoming trip to another city. She was overwhelmed and uncertain. Then came the card with the exact words she needed. At that moment, she felt strengthened. Reminded that God is always one step ahead, and she isn't alone.",
+          "name": "Joy",
+          "origin": "from Hong Kong",
+          "image": "/images/pages/home/testi1.png"
+        }
+      ],
+      "events_title": "Upcoming Events"
+    },
+    "about": {
+      "hero_title": "About Us",
+      "hero_body": "In Cup of Hope we put God as our centre of everything. As we receive His love and grace, we pass on His love by serving people with excellency and give them the same love and grace that we receive. We believe this love and grace will build home and bring hope to the people which ripples and have a lasting impact in this lovely city, Surabaya.",
+      "vm_title": "Vision & Mission",
+      "build_title": "Build Home",
+      "build_body": [
+        "People are at the heart of what we do. Our heart is to be a safe space for people who feel lost, broken, and not having a place to belong. This place is a home, where we build a family. Here, they encounter the love of God that heals, restores, and transforms - a place to feel safe, to start over, to dream again."
+      ],
+      "hope_title": "Bring Hope",
+      "hope_body": [
+        "In the middle of a world filled with chaos, we have a vision to stand and be a light in the darkness. We know that hope is the answer for that. Hope has the power to reach people's hearts, to restore what's broken, and to transform lives. We're here to share that hope to everyone.",
+        "In our home, every customer gets a card with a message of encouragement, we call it \"Card of Hope\". When people walk into this house, they don't just get good coffee, but something deeper. They experience love, healing, and get a brand new hope."
+      ],
+      "family_title": "Family Story",
+      "family_intro": "From the beginning, we believed that even in the darkest times, light can still break through. And as we journeyed forward, the people who walked through our doors didn't just become our team — they became family.",
+      "family_story1": [
+        "Our senior manager faced a personal crisis that brought him to his lowest point— where he had to run away from home for years. But through God's grace, his father found him and brought him into our community. After experiencing healing and transformation here, he now shines brightly with purpose to lead and serve others. His two sisters also joined our mission as Hope Changers.",
+        "Another brother carries a powerful testimony. For seven years, due to some circumstances, he isolated himself in his room. Yet, when he was brought to Cup of Hope, something shifted. Through grace and support, he slowly blossomed—transforming from a withdrawn young man into a confident leader. Today, he passionately brews delicious coffee as our senior barista, training the next generation to walk in excellence."
+      ],
+      "family_story2": [
+        "Meet the girl behind our lovely Card of Hope. Once felt lost after being unable to continue her studies during Covid. She came with no experience, no confidence, and no clear direction. Yet in this home, she discovered her gifts. Today, she flourishes in our media department, using her talents to share messages of hope and light. What started as a small coffee shop has grown into a place where people encounter love, healing, and the courage to begin again — a place where hope feels real and alive."
+      ],
+      "impact_title": "Our Impact at a Glance",
+      "impact_body": "Here at Cup of Hope, we measure our success not just by the coffee we serve, but by the lives we touch and the moments of change we inspire. Here's a look at the difference we've made together.",
+      "stats": [
+        {
+          "value": "3,000+",
+          "label": "Card of Hope Given"
+        },
+        {
+          "value": "12,000+",
+          "label": "Youth Empowered"
+        },
+        {
+          "value": "10+",
+          "label": "Nations Connected"
+        }
+      ]
+    },
+    "connect": {
+      "title": "Lets get connected!",
+      "body": "We love to connect with you. Either you’re here just to say hi or you have stories and testimonies to share. Youre always welcome to reach us out!"
+    },
+    "events_page": {
+      "title": "Join Us for Meaningful Moments",
+      "subtitle": "Our events are more than just gatherings—they are opportunities to connect, learn, and make a difference.",
+      "tab_upcoming": "Upcoming Event",
+      "tab_past": "Past Event"
+    },
+    "articles_page": {
+      "title": "Stories of Hope & Connection",
+      "subtitle": "Explore the journeys, inspirations, and community-driven stories that fuel Cup of Hope.",
+      "read_more": "Read More"
+    },
+    "under_development": "This page is under development. Please check back soon."
+  },
+  "id": {
+    "metadata": {
+      "home_title": "Cup of Hope | Build Home Bring Hope",
+      "home_description": "Cup of Hope: kafe dan ruang acara komunitas yang hangat dan inklusif di Surabaya. Tempat harapan, koneksi, dan acara bermakna menyatukan orang. Temukan tempat Anda.",
+      "about_title": "Tentang Kami | Cup of Hope",
+      "about_description": "Di Cup of Hope kami menempatkan Tuhan di pusat segalanya. Kami membangun rumah dan membawa harapan bagi warga Surabaya melalui kafe komunitas, acara, dan koneksi. Temukan kisah kami.",
+      "events_title": "Acara | Cup of Hope",
+      "events_description": "Temukan acara dan pertemuan bermakna di Cup of Hope Surabaya. Bergabung dengan komunitas kami untuk terhubung, belajar, dan menemukan harapan melalui lokakarya, talks, dan momen bersama.",
+      "articles_title": "Artikel | Cup of Hope",
+      "articles_description": "Baca kisah dan artikel inspiratif dari Cup of Hope. Jelajahi perjalanan komunitas, harapan, dan koneksi melalui tulisan tim, mitra, dan tamu kami di Surabaya.",
+      "contact_title": "Kontak | Cup of Hope",
+      "contact_description": "Hubungi Cup of Hope. Kami ingin mendengar dari Anda.",
+      "services_title": "Layanan | Cup of Hope",
+      "services_description": "Jelajahi cara Cup of Hope melayani komunitas di Surabaya melalui kafe, ruang acara, dan program. Koneksi, harapan, dan rasa memiliki untuk semua.",
+      "our_team_title": "Tim Kami | Cup of Hope",
+      "our_team_description": "Kenali orang-orang di balik Cup of Hope. Tim kami membawa harapan, koneksi, dan komunitas ke Surabaya melalui kafe dan acara kami. Kenali kami."
+    },
+    "nav": {
+      "home": "Beranda",
+      "about": "Tentang Kami",
+      "events": "Acara",
+      "article": "Artikel"
+    },
+    "cta": {
+      "contact_us": "Hubungi Kami",
+      "get_involved": "Hubungi Kami",
+      "view_full_story": "Baca Kisah Lengkap",
+      "view_event": "Lihat Acara",
+      "load_more": "Tampilkan Lebih Banyak",
+      "register_now": "Daftar Sekarang"
+    },
+    "footer": {
+      "description": "Menciptakan tempat di mana setiap orang merasa punya tempat, seperti di rumah, dan menemukan tujuan melalui komunitas dan iman.",
+      "copyright": "Cup of Hope. Hak cipta dilindungi.",
+      "menu": "Menu",
+      "menu_home": "Beranda",
+      "menu_about": "Tentang Kami",
+      "menu_article": "Artikel",
+      "menu_events": "Acara",
+      "faith_mission": "Iman & Misi",
+      "our_story": "Kisah Kami",
+      "get_involved": "Hubungi Kami",
+      "contact": "Kontak"
+    },
+    "event": {
+      "location": "Lokasi",
+      "date": "Tanggal",
+      "time": "Waktu",
+      "ticket_price": "Harga Tiket",
+      "includes": "Termasuk",
+      "related_title": "Acara Terkait"
+    },
+    "article": {
+      "related_title": "Artikel Terkait"
+    },
+    "error_title": "Halaman Tidak Ditemukan",
+    "error_subtitle": "Maaf, halaman yang Anda cari tidak ada atau telah dipindahkan.",
+    "error_button": "Kembali ke Beranda",
+    "whatsapp": "Hubungi Kami",
+    "home": {
+      "hero_title": [
+        "Membangun Rumah,",
+        "Membawa Harapan"
+      ],
+      "hero_subtitle": "Rumah bagi siapa saja untuk beristirahat dan terhubung—serta menemukan penyegaran. Tempat yang aman di mana harapan bertemu manusia.",
+      "about_title": "Tentang Kami",
+      "about_body": "Cup of Hope bukan sekadar kedai kopi. Kisah kami bermula di 2021, di tengah pandemi Covid-19—masa ketika ketakutan, kehilangan, dan ketidakpastian memenuhi dunia. Sementara banyak yang terpaksa menutup pintu, Tuhan menggerakkan kami untuk membuka pintu kami dengan tujuan sederhana namun berani: membawa harapan bagi kota kami dan orang-orang di dalamnya.",
+      "card_title": [
+        "Kartu Harapan Kami"
+      ],
+      "card_body": "Harapan adalah sesuatu yang perlu kita jalani setiap hari. Kartu harapan ini didoakan dan ditulis oleh tim kami secara rutin. Setiap bulan, kami menulis kata-kata penyemangat baru di kartu kami, dan kami juga mengubah desainnya. Kata-kata itu sering hadir di momen yang tepat dan telah memberkati begitu banyak orang.",
+      "testimonials": [
+        {
+          "quote": "Kalian pasti bisa, karena Tuhan menopang kalian. Jangan khawatir, Dia yang memegang kendali.",
+          "story": "Bagi Joy, ini sangat pribadi. Lima menit sebelum memasuki Cup of Hope, dia bercerita kepada teman-temannya betapa cemasnya ia dengan perjalanan ke kota lain. Ia kewalahan dan tidak pasti. Lalu datang kartu dengan kata-kata yang tepat yang ia butuhkan. Saat itu, ia merasa dikuatkan. Diingatkan bahwa Tuhan selalu selangkah di depan, dan ia tidak sendirian.",
+          "name": "Joy",
+          "origin": "dari Hong Kong",
+          "image": "/images/pages/home/testi1.png"
+        }
+      ],
+      "events_title": "Acara Mendatang"
+    },
+    "about": {
+      "hero_title": "Tentang Kami",
+      "hero_body": "Di Cup of Hope kami menempatkan Tuhan di pusat segalanya. Saat kami menerima kasih dan anugerah-Nya, kami meneruskan kasih-Nya dengan melayani sesama secara prima dan memberi mereka kasih dan anugerah yang sama. Kami percaya kasih dan anugerah ini akan membangun rumah dan membawa harapan yang berkelanjutan di kota kami, Surabaya.",
+      "vm_title": "Visi & Misi",
+      "build_title": "Membangun Rumah",
+      "build_body": [
+        "Manusia ada di hati segala yang kami lakukan. Hati kami ingin menjadi ruang aman bagi mereka yang merasa hilang, terluka, dan tidak punya tempat untuk berpijak. Tempat ini adalah rumah, di mana kami membangun keluarga. Di sini, mereka mengalami kasih Tuhan yang menyembuhkan, memulihkan, dan mengubah—tempat untuk merasa aman, memulai lagi, dan bermimpi lagi."
+      ],
+      "hope_title": "Membawa Harapan",
+      "hope_body": [
+        "Di tengah dunia yang penuh kekacauan, kami punya visi untuk berdiri dan menjadi terang di kegelapan. Kami percaya harapan adalah jawabannya. Harapan punya kuasa menyentuh hati, memulihkan yang rusak, dan mengubah hidup. Kami ada untuk membagikan harapan itu kepada semua orang.",
+        "Di rumah kami, setiap tamu menerima kartu berisi pesan penyemangat—kami menyebutnya \"Kartu Harapan\". Saat orang melangkah ke sini, mereka tidak hanya mendapat kopi yang enak, tapi sesuatu yang lebih dalam: kasih, pemulihan, dan harapan baru."
+      ],
+      "family_title": "Kisah Keluarga",
+      "family_intro": "Sejak awal, kami percaya bahwa bahkan di saat paling gelap, terang tetap bisa menembus. Dan seiring perjalanan kami, orang-orang yang melintasi pintu kami tidak sekadar menjadi tim—mereka menjadi keluarga.",
+      "family_story1": [
+        "Manajer senior kami pernah mengalami krisis pribadi yang membawanya ke titik terendah—ia harus pergi dari rumah selama bertahun-tahun. Tetapi melalui anugerah Tuhan, ayahnya menemukannya dan membawanya ke komunitas kami. Setelah mengalami pemulihan dan transformasi di sini, ia kini bersinar dengan tujuan untuk memimpin dan melayani orang lain. Dua saudari perempuannya juga bergabung dalam misi kami sebagai Hope Changers.",
+        "Saudara lain menyimpan kesaksian yang kuat. Selama tujuh tahun, karena berbagai keadaan, ia mengurung diri di kamarnya. Namun saat dibawa ke Cup of Hope, sesuatu berubah. Melalui anugerah dan dukungan, ia perlahan berkembang—dari pemuda yang tertutup menjadi pemimpin yang percaya diri. Kini ia dengan penuh semangat meracik kopi lezat sebagai barista senior kami, melatih generasi berikutnya untuk melayani dengan prima."
+      ],
+      "family_story2": [
+        "Ini dia yang berada di balik Kartu Harapan kami. Pernah merasa hilang karena tidak bisa melanjutkan studi saat Covid. Ia datang tanpa pengalaman, tanpa percaya diri, dan tanpa arah yang jelas. Tapi di rumah ini, ia menemukan talentanya. Kini ia berkembang di departemen media kami, menggunakan bakatnya untuk menyebarkan pesan harapan dan terang. Yang bermula dari kedai kopi kecil telah tumbuh menjadi tempat orang mengalami kasih, pemulihan, dan keberanian untuk memulai lagi—tempat di mana harapan terasa nyata dan hidup."
+      ],
+      "impact_title": "Dampak Kami dalam Sekilas",
+      "impact_body": "Di Cup of Hope, kami mengukur kesuksesan tidak hanya dari kopi yang kami sajikan, tapi dari kehidupan yang kami sentuh dan momen perubahan yang kami bangkitkan. Ini sekilas perbedaan yang telah kita wujudkan bersama.",
+      "stats": [
+        {
+          "value": "3,000+",
+          "label": "Kartu Harapan Dibagikan"
+        },
+        {
+          "value": "12,000+",
+          "label": "Anak Muda Diberdayakan"
+        },
+        {
+          "value": "10+",
+          "label": "Negara Terhubung"
+        }
+      ]
+    },
+    "connect": {
+      "title": "Mari Terhubung!",
+      "body": "Kami senang sekali bisa terhubung denganmu. Entah kamu datang hanya untuk menyapa, atau ingin berbagi cerita dan kesaksian, kamu selalu diterima dengan tangan terbuka. Jangan ragu untuk menghubungi kami ya!"
+    },
+    "events_page": {
+      "title": "Bergabunglah dalam Momen yang Penuh Makna",
+      "subtitle": "Acara kami lebih dari sekadar kumpul-kumpul—ini kesempatan untuk terhubung, belajar, dan membuat perbedaan.",
+      "tab_upcoming": "Acara Mendatang",
+      "tab_past": "Arsip Acara"
+    },
+    "articles_page": {
+      "title": "Kisah Harapan & Kebersamaan",
+      "subtitle": "Jelajahi perjalanan, inspirasi, dan cerita dari komunitas yang menggerakkan Cup of Hope.",
+      "read_more": "Read More"
+    },
+    "under_development": "This page is under development. Please check back soon."
+  }
+}

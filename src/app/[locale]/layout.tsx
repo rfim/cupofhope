@@ -5,6 +5,7 @@ import Script from "next/script";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { getDictionary, isLocale, locales, SITE_URL } from "@/i18n";
+import { asset } from "@/lib/asset";
 import "../globals.css";
 
 const lufga = localFont({
@@ -33,8 +34,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     metadataBase: new URL(SITE_URL),
     title: m.home_title,
     description: m.home_description,
-    icons: { icon: "/images/logos/coh_logo.png", apple: "/images/logos/coh_logo.png" },
-    manifest: "/images/favicon/site.webmanifest",
+    icons: { icon: asset("/images/logos/coh_logo.png"), apple: asset("/images/logos/coh_logo.png") },
+    manifest: asset("/images/favicon/site.webmanifest"),
     appleWebApp: { title: "Cup of Hope" },
     openGraph: {
       siteName: "Cup of Hope",

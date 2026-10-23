@@ -1,11 +1,12 @@
 import { WHATSAPP_URL, type Dictionary } from "@/i18n";
+import { asset } from "@/lib/asset";
 
 export default function ConnectCta({ dict }: { dict: Dictionary }) {
   return (
     <section className="px-4 py-16 md:py-24">
       <div
         className="relative mx-auto flex max-w-[1040px] flex-col items-center overflow-hidden rounded-[40px] bg-cover bg-center px-6 py-14 text-center text-white md:py-16"
-        style={{ backgroundImage: "url(/images/pages/events/event-cta.png)" }}
+        style={{ backgroundImage: `url(${asset("/images/pages/events/event-cta.png")})` }}
       >
         <div className="absolute inset-0 bg-[#1f2a33]/80" />
         <div className="relative">

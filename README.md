@@ -7,7 +7,7 @@ Website for Cup of Hope, a community café and event space in Surabaya. Built wi
 ```bash
 npm install
 npm run dev      # http://localhost:3000
-npm run build && npm start
+npm run build    # static site in out/
 ```
 
 ## Structure
@@ -19,7 +19,7 @@ src/
   components/            Navbar, Footer, EventCard, ArticleCard, EventsTabs, Testimonials, ConnectCta, ...
   data/content.json      events and articles (EN + ID)
   i18n/dictionaries.json UI and page copy (EN + ID)
-  middleware.ts          redirects / to /en or /id based on Accept-Language
+  app/page.tsx           redirects / to /en or /id based on the browser language
 public/images/           logos, illustrations and photos
 ```
 
@@ -30,6 +30,14 @@ public/images/           logos, illustrations and photos
 - **Contact links** (WhatsApp, email) and the site URL: `src/i18n/index.ts`.
 
 Every event and article page is pre-rendered at build time, and `sitemap.xml` and `robots.txt` are generated automatically.
+
+## Deployment (GitHub Pages)
+
+The site is built as a static export (`output: "export"`). Every push to `main` runs `.github/workflows/deploy.yml`, which builds the site and publishes `out/` to GitHub Pages.
+
+- One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+- The base path (`/cupofhope`) comes from the Pages configuration. If you add a custom domain, it becomes empty automatically.
+- To test a Pages build locally, run `NEXT_PUBLIC_BASE_PATH=/cupofhope npm run build`. Use `asset()` from `src/lib/asset.ts` for any `public/` path that isn't rendered through `next/image` or `next/link`.
 
 ## Notes
 

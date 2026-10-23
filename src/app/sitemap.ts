@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 import { articles, events } from "@/data";
 import { locales, SITE_URL } from "@/i18n";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const pages: [string, MetadataRoute.Sitemap[number]["changeFrequency"], number][] = [

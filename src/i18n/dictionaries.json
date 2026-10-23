@@ -49,10 +49,17 @@
       "time": "Time",
       "ticket_price": "Ticket Price",
       "includes": "Includes",
-      "related_title": "Related Event"
+      "related_title": "Related Event",
+      "ended": "Ended",
+      "add_to_calendar": "Add to Google Calendar",
+      "registration_closed": "This event has ended",
+      "back": "All events"
     },
     "article": {
-      "related_title": "Related Article"
+      "related_title": "Related Article",
+      "min_read": "min read",
+      "back": "All articles",
+      "share": "Share"
     },
     "error_title": "Page Not Found",
     "error_subtitle": "Sorry, the page you are looking for doesn't exist or has been moved.",
@@ -71,15 +78,6 @@
         "of Hope"
       ],
       "card_body": "Hope is something we need to live out every day. These cards of hope are downloaded and written by our team regularly. Every month, we write new words of encouragement on our cards, and we also change the design. The words often show up at just the right moment, and have blessed so many lives.",
-      "testimonials": [
-        {
-          "quote": "You will make it guys, because God carries you. Don't you worry, He is in control.",
-          "story": "For Joy, it was deeply personal. Just five minutes before stepping into Cup of Hope, she had been telling her friends how anxious she felt about an upcoming trip to another city. She was overwhelmed and uncertain. Then came the card with the exact words she needed. At that moment, she felt strengthened. Reminded that God is always one step ahead, and she isn't alone.",
-          "name": "Joy",
-          "origin": "from Hong Kong",
-          "image": "/images/pages/home/testi1.png"
-        }
-      ],
       "events_title": "Upcoming Events"
     },
     "about": {
@@ -105,21 +103,7 @@
         "Meet the girl behind our lovely Card of Hope. Once felt lost after being unable to continue her studies during Covid. She came with no experience, no confidence, and no clear direction. Yet in this home, she discovered her gifts. Today, she flourishes in our media department, using her talents to share messages of hope and light. What started as a small coffee shop has grown into a place where people encounter love, healing, and the courage to begin again — a place where hope feels real and alive."
       ],
       "impact_title": "Our Impact at a Glance",
-      "impact_body": "Here at Cup of Hope, we measure our success not just by the coffee we serve, but by the lives we touch and the moments of change we inspire. Here's a look at the difference we've made together.",
-      "stats": [
-        {
-          "value": "3,000+",
-          "label": "Card of Hope Given"
-        },
-        {
-          "value": "12,000+",
-          "label": "Youth Empowered"
-        },
-        {
-          "value": "10+",
-          "label": "Nations Connected"
-        }
-      ]
+      "impact_body": "Here at Cup of Hope, we measure our success not just by the coffee we serve, but by the lives we touch and the moments of change we inspire. Here's a look at the difference we've made together."
     },
     "connect": {
       "title": "Lets get connected!",
@@ -136,7 +120,8 @@
       "subtitle": "Explore the journeys, inspirations, and community-driven stories that fuel Cup of Hope.",
       "read_more": "Read More"
     },
-    "under_development": "This page is under development. Please check back soon."
+    "under_development": "This page is under development. Please check back soon.",
+    "whatsapp_float": "Chat with us on WhatsApp"
   },
   "id": {
     "metadata": {
@@ -188,10 +173,17 @@
       "time": "Waktu",
       "ticket_price": "Harga Tiket",
       "includes": "Termasuk",
-      "related_title": "Acara Terkait"
+      "related_title": "Acara Terkait",
+      "ended": "Selesai",
+      "add_to_calendar": "Tambah ke Google Calendar",
+      "registration_closed": "Acara ini sudah selesai",
+      "back": "Semua acara"
     },
     "article": {
-      "related_title": "Artikel Terkait"
+      "related_title": "Artikel Terkait",
+      "min_read": "menit baca",
+      "back": "Semua artikel",
+      "share": "Bagikan"
     },
     "error_title": "Halaman Tidak Ditemukan",
     "error_subtitle": "Maaf, halaman yang Anda cari tidak ada atau telah dipindahkan.",
@@ -209,15 +201,6 @@
         "Kartu Harapan Kami"
       ],
       "card_body": "Harapan adalah sesuatu yang perlu kita jalani setiap hari. Kartu harapan ini didoakan dan ditulis oleh tim kami secara rutin. Setiap bulan, kami menulis kata-kata penyemangat baru di kartu kami, dan kami juga mengubah desainnya. Kata-kata itu sering hadir di momen yang tepat dan telah memberkati begitu banyak orang.",
-      "testimonials": [
-        {
-          "quote": "Kalian pasti bisa, karena Tuhan menopang kalian. Jangan khawatir, Dia yang memegang kendali.",
-          "story": "Bagi Joy, ini sangat pribadi. Lima menit sebelum memasuki Cup of Hope, dia bercerita kepada teman-temannya betapa cemasnya ia dengan perjalanan ke kota lain. Ia kewalahan dan tidak pasti. Lalu datang kartu dengan kata-kata yang tepat yang ia butuhkan. Saat itu, ia merasa dikuatkan. Diingatkan bahwa Tuhan selalu selangkah di depan, dan ia tidak sendirian.",
-          "name": "Joy",
-          "origin": "dari Hong Kong",
-          "image": "/images/pages/home/testi1.png"
-        }
-      ],
       "events_title": "Acara Mendatang"
     },
     "about": {
@@ -243,21 +226,7 @@
         "Ini dia yang berada di balik Kartu Harapan kami. Pernah merasa hilang karena tidak bisa melanjutkan studi saat Covid. Ia datang tanpa pengalaman, tanpa percaya diri, dan tanpa arah yang jelas. Tapi di rumah ini, ia menemukan talentanya. Kini ia berkembang di departemen media kami, menggunakan bakatnya untuk menyebarkan pesan harapan dan terang. Yang bermula dari kedai kopi kecil telah tumbuh menjadi tempat orang mengalami kasih, pemulihan, dan keberanian untuk memulai lagi—tempat di mana harapan terasa nyata dan hidup."
       ],
       "impact_title": "Dampak Kami dalam Sekilas",
-      "impact_body": "Di Cup of Hope, kami mengukur kesuksesan tidak hanya dari kopi yang kami sajikan, tapi dari kehidupan yang kami sentuh dan momen perubahan yang kami bangkitkan. Ini sekilas perbedaan yang telah kita wujudkan bersama.",
-      "stats": [
-        {
-          "value": "3,000+",
-          "label": "Kartu Harapan Dibagikan"
-        },
-        {
-          "value": "12,000+",
-          "label": "Anak Muda Diberdayakan"
-        },
-        {
-          "value": "10+",
-          "label": "Negara Terhubung"
-        }
-      ]
+      "impact_body": "Di Cup of Hope, kami mengukur kesuksesan tidak hanya dari kopi yang kami sajikan, tapi dari kehidupan yang kami sentuh dan momen perubahan yang kami bangkitkan. Ini sekilas perbedaan yang telah kita wujudkan bersama."
     },
     "connect": {
       "title": "Mari Terhubung!",
@@ -272,8 +241,9 @@
     "articles_page": {
       "title": "Kisah Harapan & Kebersamaan",
       "subtitle": "Jelajahi perjalanan, inspirasi, dan cerita dari komunitas yang menggerakkan Cup of Hope.",
-      "read_more": "Read More"
+      "read_more": "Baca Selengkapnya"
     },
-    "under_development": "This page is under development. Please check back soon."
+    "under_development": "This page is under development. Please check back soon.",
+    "whatsapp_float": "Chat dengan kami di WhatsApp"
   }
 }

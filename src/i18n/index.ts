@@ -1,3 +1,4 @@
+import content from "@/data/content.json";
 import dictionaries from "./dictionaries.json";
 
 export const locales = ["en", "id"] as const;
@@ -14,6 +15,8 @@ export function getDictionary(locale: Locale): Dictionary {
   return dictionaries[locale];
 }
 
-export const WHATSAPP_URL = "https://wa.link/xxbdoa";
-export const CONTACT_EMAIL = "service@qtnil.com";
+// Editable from the admin panel (src/data/content.json → settings).
+export const WHATSAPP_URL = content.settings.whatsappUrl;
+export const CONTACT_EMAIL = content.settings.email;
 export const SITE_URL = "https://cupofhope.id";
+export const GITHUB_REPO = "rfim/cupofhope";

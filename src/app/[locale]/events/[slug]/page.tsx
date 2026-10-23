@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import EventCard from "@/components/EventCard";
-import { CalendarIcon, ClockIcon, PinIcon } from "@/components/Icons";
-import { events, getEvent, relatedEvents } from "@/data";
-import { getDictionary, locales, WHATSAPP_URL, type Locale } from "@/i18n";
+import { ArrowRightIcon, CalendarIcon, ClockIcon, PinIcon } from "@/components/Icons";
+import JsonLd from "@/components/JsonLd";
+import { eventTimes, events, formatDate, getEvent, googleCalendarUrl, relatedEvents } from "@/data";
+import { getDictionary, locales, SITE_URL, WHATSAPP_URL, type Locale } from "@/i18n";
 
 type Params = { params: Promise<{ locale: Locale; slug: string }> };
 
@@ -30,17 +32,38 @@ export default async function EventDetailPage({ params }: Params) {
   if (!event) notFound();
   const dict = getDictionary(locale);
   const e = event[locale];
+  const calendarUrl = event.past ? null : googleCalendarUrl(event, locale);
+  const times = eventTimes(event);
 
   const info = [
     { label: dict.event.location, value: event.location, Icon: PinIcon },
-    { label: dict.event.date, value: event.date, Icon: CalendarIcon },
+    { label: dict.event.date, value: formatDate(event.date, locale), Icon: CalendarIcon },
     { label: dict.event.time, value: event.time, Icon: ClockIcon },
   ];
 
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: e.title,
+    description: e.body.join(" "),
+    image: `${SITE_URL}${event.image}`,
+    startDate: times?.start.toISOString() ?? event.date,
+    endDate: times?.end.toISOString(),
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    location: { "@type": "Place", name: event.location, address: { "@type": "PostalAddress", addressLocality: "Surabaya", addressCountry: "ID" } },
+    organizer: { "@type": "Organization", name: "Cup of Hope", url: SITE_URL },
+    ...(event.price && { offers: { "@type": "Offer", price: event.price.replace(/\D/g, ""), priceCurrency: "IDR", url: `${SITE_URL}/${locale}/events/${slug}` } }),
+  };
+
   return (
     <>
-      <section className="mx-auto grid max-w-[1050px] gap-10 px-6 pb-16 pt-36 md:grid-cols-[1fr_318px] md:gap-12">
+      <JsonLd data={schema} />
+      <section className="mx-auto grid max-w-[1050px] gap-10 px-6 pb-16 pt-32 md:grid-cols-[1fr_318px] md:gap-12 md:pt-36">
         <div>
+          <Link href={`/${locale}/events`} className="mb-6 inline-flex items-center gap-2 text-sm text-neutral-500 hover:text-black">
+            <ArrowRightIcon className="h-3.5 w-3.5 rotate-180" /> {dict.event.back}
+          </Link>
           <h1 className="text-4xl font-semibold leading-tight md:text-5xl">{e.title}</h1>
           <div className="relative mt-6 aspect-[16/9] overflow-hidden rounded-2xl">
             <Image src={event.image} alt={e.title} fill priority sizes="(min-width: 768px) 690px, 100vw" className="object-cover" />
@@ -55,7 +78,7 @@ export default async function EventDetailPage({ params }: Params) {
             {info.map(({ label, value, Icon }) => (
               <div key={label}>
                 <p className="text-sm text-neutral-500">{label}</p>
-                <p className="mt-1 flex items-center gap-2 font-semibold"><Icon className="h-4 w-4 text-primary-400" />{value}</p>
+                <p className="mt-1 flex items-center gap-2 font-semibold"><Icon className="h-4 w-4 shrink-0 text-primary-400" />{value}</p>
               </div>
             ))}
             {event.price && (
@@ -64,7 +87,7 @@ export default async function EventDetailPage({ params }: Params) {
                 <p className="mt-1 font-semibold">{event.price}</p>
               </div>
             )}
-            {e.includes && (
+            {e.includes && e.includes.length > 0 && (
               <div>
                 <p className="text-sm text-neutral-500">{dict.event.includes}</p>
                 <ul className="mt-1 list-inside list-disc space-y-1 font-semibold">
@@ -73,14 +96,28 @@ export default async function EventDetailPage({ params }: Params) {
               </div>
             )}
           </div>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 block rounded-full bg-primary py-4 text-center font-semibold transition hover:brightness-95"
-          >
-            {dict.cta.register_now}
-          </a>
+          {event.past ? (
+            <p className="mt-6 rounded-full bg-neutral-100 py-4 text-center font-semibold text-neutral-500">{dict.event.registration_closed}</p>
+          ) : (
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 block rounded-full bg-primary py-4 text-center font-semibold transition hover:brightness-95"
+            >
+              {dict.cta.register_now}
+            </a>
+          )}
+          {calendarUrl && (
+            <a
+              href={calendarUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 flex items-center justify-center gap-2 rounded-full border border-neutral-300 py-3 text-sm font-medium text-neutral-700 transition-colors hover:border-primary-600"
+            >
+              <CalendarIcon className="h-4 w-4 text-primary-600" /> {dict.event.add_to_calendar}
+            </a>
+          )}
         </aside>
       </section>
 

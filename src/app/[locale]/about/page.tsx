@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import ConnectCta from "@/components/ConnectCta";
+import Reveal from "@/components/Reveal";
+import { settings } from "@/data";
 import { getDictionary, type Locale } from "@/i18n";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: Locale }> }): Promise<Metadata> {
@@ -37,16 +39,16 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
       <section className="mx-auto max-w-[1120px] px-6 py-24 md:py-32">
         <h2 className="text-center text-4xl font-semibold md:text-5xl">{a.vm_title}</h2>
         <div className="mt-12 grid gap-6 md:grid-cols-2 md:gap-10">
-          <div className={`${cardBg} bg-brown-700 p-8 md:p-10`}>
+          <Reveal className={`${cardBg} bg-brown-700 p-8 md:p-10`}>
             {swirl}
             <h3 className="text-center text-2xl font-semibold md:text-3xl">{a.build_title}</h3>
             {a.build_body.map((p, i) => <p key={i} className="relative mt-8 text-sm leading-relaxed">{p}</p>)}
-          </div>
-          <div className={`${cardBg} bg-brown-500 p-8 md:p-10`}>
+          </Reveal>
+          <Reveal delay={120} className={`${cardBg} bg-brown-500 p-8 md:p-10`}>
             {swirl}
             <h3 className="text-center text-2xl font-semibold md:text-3xl">{a.hope_title}</h3>
             {a.hope_body.map((p, i) => <p key={i} className={`relative text-sm leading-relaxed ${i === 0 ? "mt-8" : "mt-5"}`}>{p}</p>)}
-          </div>
+          </Reveal>
         </div>
       </section>
 
@@ -77,12 +79,12 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         <h2 className="text-center text-4xl font-semibold md:text-5xl">{a.impact_title}</h2>
         <p className="mx-auto mt-6 max-w-[780px] text-center leading-relaxed text-neutral-700">{a.impact_body}</p>
         <div className="mt-12 grid gap-6 sm:grid-cols-3 md:gap-10">
-          {a.stats.map((s, i) => (
-            <div key={s.label} className={`${cardBg} ${["bg-brown-700", "bg-brown-500", "bg-[#6e4206]"][i]} px-6 py-12 text-center`}>
+          {settings.stats.map((s, i) => (
+            <Reveal key={i} delay={i * 120} className={`${cardBg} ${["bg-brown-700", "bg-brown-500", "bg-[#6e4206]"][i % 3]} px-6 py-12 text-center`}>
               {swirl}
               <p className="relative text-5xl font-semibold md:text-6xl">{s.value}</p>
-              <p className="relative mt-4 text-sm">{s.label}</p>
-            </div>
+              <p className="relative mt-4 text-sm">{s[locale]}</p>
+            </Reveal>
           ))}
         </div>
       </section>

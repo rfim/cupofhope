@@ -23,7 +23,19 @@ src/
 public/images/           logos, illustrations and photos
 ```
 
-## Editing content
+## Admin panel (easter egg)
+
+Type **`open sesame`** anywhere on the site (or tap the footer logo 5 times on a phone) to open `/admin/`, then enter the PIN. The default PIN is **111111**; change it under Pengaturan → Ganti PIN.
+
+From the panel you can add, edit, reorder, duplicate and delete events, articles and testimonials in both languages, upload images (resized to WebP in the browser), and edit the WhatsApp link, email and impact stats. **Publikasikan** commits all changes to `main` as one commit, and GitHub Pages redeploys in about 1–2 minutes.
+
+Saving needs a GitHub fine-grained personal access token, entered once per browser under Pengaturan:
+- Repository access: only `rfim/cupofhope`
+- Permissions: **Contents: Read and write**, **Actions: Read-only**
+
+The token is stored only in that browser's localStorage. The PIN is an easter-egg lock, not real security: the site is static, so its hash ships with the page. What protects content is the token, since nobody can publish without one. Five wrong PINs lock the pad for 60 seconds.
+
+## Editing content by hand
 
 - **Events and articles**: edit `src/data/content.json`. Each entry has shared fields (`slug`, `date`, `image`, ...) plus `en` and `id` objects holding `title`, `body` paragraphs and optional `includes`. Events with `"past": true` appear under the "Past Event" tab.
 - **Page copy, navigation and SEO metadata**: edit `src/i18n/dictionaries.json`.

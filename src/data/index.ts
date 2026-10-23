@@ -1,30 +1,57 @@
 import content from "./content.json";
 import type { Locale } from "@/i18n";
 
-type Localized = { title: string; body: string[]; includes?: string[] };
+export type LocalizedEntry = { title: string; body: string[]; includes?: string[] };
 
 export type Event = {
   slug: string;
   past: boolean;
   image: string;
   location: string;
+  /** ISO date, e.g. "2025-05-18" */
   date: string;
+  /** e.g. "20.00 - 21.00 WIB" */
   time: string;
   price?: string;
-  en: Localized;
-  id: Localized;
+  en: LocalizedEntry;
+  id: LocalizedEntry;
 };
 
 export type Article = {
   slug: string;
   image: string;
+  /** ISO date, e.g. "2025-05-18" */
   date: string;
-  en: Localized;
-  id: Localized;
+  en: LocalizedEntry;
+  id: LocalizedEntry;
 };
 
-export const events = content.events as Event[];
-export const articles = content.articles as Article[];
+export type Testimonial = {
+  name: string;
+  image: string;
+  en: { quote: string; story: string; origin: string };
+  id: { quote: string; story: string; origin: string };
+};
+
+export type Stat = { value: string; en: string; id: string };
+
+export type Settings = {
+  whatsappUrl: string;
+  email: string;
+  /** sha256("cupofhope:" + PIN), checked by the admin panel */
+  pinHash: string;
+  stats: Stat[];
+};
+
+export type Content = {
+  settings: Settings;
+  events: Event[];
+  articles: Article[];
+  testimonials: Testimonial[];
+};
+
+export const site = content as Content;
+export const { settings, events, articles, testimonials } = site;
 
 export const upcomingEvents = events.filter((e) => !e.past);
 export const pastEvents = events.filter((e) => e.past);
@@ -33,7 +60,9 @@ export const getEvent = (slug: string) => events.find((e) => e.slug === slug);
 export const getArticle = (slug: string) => articles.find((a) => a.slug === slug);
 
 export function relatedEvents(slug: string, count = 3) {
-  return events.filter((e) => e.slug !== slug).slice(0, count);
+  const others = events.filter((e) => e.slug !== slug);
+  // Prefer events that are still open for registration.
+  return [...others.filter((e) => !e.past), ...others.filter((e) => e.past)].slice(0, count);
 }
 
 export function relatedArticles(slug: string, count = 3) {
@@ -44,4 +73,38 @@ export function excerpt(text: string, length = 150) {
   return text.length > length ? `${text.slice(0, length).trimEnd()}...` : text;
 }
 
-export const t = <T extends { en: Localized; id: Localized }>(item: T, locale: Locale) => item[locale];
+export function formatDate(iso: string, locale: Locale) {
+  return new Intl.DateTimeFormat(locale === "id" ? "id-ID" : "en-US", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(new Date(`${iso}T00:00:00Z`));
+}
+
+export function readingMinutes(paragraphs: string[]) {
+  const words = paragraphs.join(" ").split(/\s+/).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
+/** Parses "20.00 - 21.00 WIB" into UTC start/end for calendar links (WIB = UTC+7). */
+export function eventTimes(event: Pick<Event, "date" | "time">) {
+  const m = event.time.match(/(\d{1,2})[.:](\d{2})\s*-\s*(\d{1,2})[.:](\d{2})/);
+  if (!m) return null;
+  const at = (h: string, min: string) => new Date(`${event.date}T${h.padStart(2, "0")}:${min}:00+07:00`);
+  return { start: at(m[1], m[2]), end: at(m[3], m[4]) };
+}
+
+export function googleCalendarUrl(event: Event, locale: Locale) {
+  const times = eventTimes(event);
+  if (!times) return null;
+  const fmt = (d: Date) => d.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}/, "");
+  const params = new URLSearchParams({
+    action: "TEMPLATE",
+    text: event[locale].title,
+    dates: `${fmt(times.start)}/${fmt(times.end)}`,
+    details: event[locale].body[0] ?? "",
+    location: event.location,
+  });
+  return `https://calendar.google.com/calendar/render?${params}`;
+}

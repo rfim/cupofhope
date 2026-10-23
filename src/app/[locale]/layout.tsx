@@ -1,24 +1,14 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import Script from "next/script";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import SecretTrigger from "@/components/SecretTrigger";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { getDictionary, isLocale, locales, SITE_URL } from "@/i18n";
 import { asset } from "@/lib/asset";
+import { lufga } from "../fonts";
 import "../globals.css";
-
-const lufga = localFont({
-  src: [
-    { path: "../fonts/LufgaRegular.ttf", weight: "400", style: "normal" },
-    { path: "../fonts/LufgaItalic.ttf", weight: "400", style: "italic" },
-    { path: "../fonts/LufgaMedium.ttf", weight: "500", style: "normal" },
-    { path: "../fonts/LufgaSemiBold.ttf", weight: "600", style: "normal" },
-    { path: "../fonts/LufgaBold.ttf", weight: "700", style: "normal" },
-  ],
-  variable: "--font-lufga",
-  display: "swap",
-});
 
 const GA_ID = "G-GH1LD8PFHQ";
 
@@ -32,6 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const m = getDictionary(locale).metadata;
   return {
     metadataBase: new URL(SITE_URL),
+    alternates: { languages: { en: "/en", id: "/id", "x-default": "/en" } },
     title: m.home_title,
     description: m.home_description,
     icons: { icon: asset("/images/logos/coh_logo.png"), apple: asset("/images/logos/coh_logo.png") },
@@ -57,6 +48,8 @@ export default async function LocaleLayout({ children, params }: { children: Rea
         <Navbar locale={locale} dict={dict} />
         <main>{children}</main>
         <Footer locale={locale} dict={dict} />
+        <WhatsAppButton label={dict.whatsapp_float} />
+        <SecretTrigger />
         <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
         <Script id="ga" strategy="afterInteractive">
           {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`}

@@ -1,11 +1,33 @@
 {
+  "settings": {
+    "whatsappUrl": "https://wa.link/xxbdoa",
+    "email": "service@qtnil.com",
+    "pinHash": "10cc2192c25578a41e5502034e5b84ae34706b279fc9f67e0d4c0a9e7a76f39b",
+    "stats": [
+      {
+        "value": "3,000+",
+        "en": "Card of Hope Given",
+        "id": "Kartu Harapan Dibagikan"
+      },
+      {
+        "value": "12,000+",
+        "en": "Youth Empowered",
+        "id": "Anak Muda Diberdayakan"
+      },
+      {
+        "value": "10+",
+        "en": "Nations Connected",
+        "id": "Negara Terhubung"
+      }
+    ]
+  },
   "events": [
     {
       "slug": "barista-beginner-1",
       "past": false,
       "image": "/images/pages/events/event-image1.png",
       "location": "Cup of Hope Café, Surabaya",
-      "date": "May 18, 2025",
+      "date": "2025-05-18",
       "time": "20.00 - 21.00 WIB",
       "en": {
         "title": "Barista Training Workshop: Beginner",
@@ -29,7 +51,7 @@
       "past": false,
       "image": "/images/pages/events/event-image1.png",
       "location": "Cup of Hope Café, Surabaya",
-      "date": "May 18, 2025",
+      "date": "2025-05-18",
       "time": "20.00 - 21.00 WIB",
       "en": {
         "title": "Community Coffee, Cup and Conversation",
@@ -53,7 +75,7 @@
       "past": false,
       "image": "/images/pages/events/event-image1.png",
       "location": "Cup of Hope Café, Surabaya",
-      "date": "May 18, 2025",
+      "date": "2025-05-18",
       "time": "20.00 - 21.00 WIB",
       "en": {
         "title": "Youth Empowerment: A Fundraising Event",
@@ -108,7 +130,7 @@
       "past": false,
       "image": "/images/pages/events/event-image1.png",
       "location": "Cup of Hope Café, Surabaya",
-      "date": "June 15, 2025",
+      "date": "2025-06-15",
       "time": "18.00 - 20.00 WIB",
       "en": {
         "title": "Barista Training Workshop: Advanced",
@@ -132,7 +154,7 @@
       "past": false,
       "image": "/images/pages/events/event-image1.png",
       "location": "Cup of Hope Café, Surabaya",
-      "date": "June 22, 2025",
+      "date": "2025-06-22",
       "time": "19.00 - 21.00 WIB",
       "en": {
         "title": "Coffee Tasting & Cupping Session for Beginner",
@@ -156,7 +178,7 @@
       "past": false,
       "image": "/images/pages/events/event-image1.png",
       "location": "Cup of Hope Café, Surabaya",
-      "date": "July 5, 2025",
+      "date": "2025-07-05",
       "time": "18.00 - 20.00 WIB",
       "en": {
         "title": "Latte Art Masterclass for Intermediate Level",
@@ -180,7 +202,7 @@
       "past": false,
       "image": "/images/pages/events/event-image1.png",
       "location": "Cup of Hope Café, Surabaya",
-      "date": "July 12, 2025",
+      "date": "2025-07-12",
       "time": "19.00 - 21.00 WIB",
       "en": {
         "title": "Coffee Brewing Techniques Workshop",
@@ -204,7 +226,7 @@
       "past": true,
       "image": "/images/pages/events/event-image1.png",
       "location": "Cup of Hope Café, Surabaya",
-      "date": "April 10, 2025",
+      "date": "2025-04-10",
       "time": "19.00 - 21.00 WIB",
       "en": {
         "title": "Barista Training Workshop: Beginner",
@@ -228,7 +250,7 @@
       "past": true,
       "image": "/images/pages/events/event-image1.png",
       "location": "Cup of Hope Café, Surabaya",
-      "date": "March 25, 2025",
+      "date": "2025-03-25",
       "time": "19.00 - 21.00 WIB",
       "en": {
         "title": "Community Coffee, Cup and Conversation",
@@ -252,7 +274,7 @@
       "past": true,
       "image": "/images/pages/events/event-image1.png",
       "location": "Cup of Hope Café, Surabaya",
-      "date": "February 12, 2025",
+      "date": "2025-02-12",
       "time": "19.00 - 21.00 WIB",
       "en": {
         "title": "Youth Empowerment: A Fundraising Event",
@@ -276,7 +298,7 @@
       "past": true,
       "image": "/images/pages/events/event-image1.png",
       "location": "Cup of Hope Café, Surabaya",
-      "date": "January 20, 2025",
+      "date": "2025-01-20",
       "time": "19.00 - 21.00 WIB",
       "en": {
         "title": "Barista Training Workshop: Advanced",
@@ -300,7 +322,7 @@
       "past": true,
       "image": "/images/pages/events/event-image1.png",
       "location": "Cup of Hope Café, Surabaya",
-      "date": "December 15, 2024",
+      "date": "2024-12-15",
       "time": "19.00 - 21.00 WIB",
       "en": {
         "title": "Coffee Tasting & Cupping Session",
@@ -324,7 +346,7 @@
       "past": true,
       "image": "/images/pages/events/event-image1.png",
       "location": "Cup of Hope Café, Surabaya",
-      "date": "November 28, 2024",
+      "date": "2024-11-28",
       "time": "18.00 - 20.00 WIB",
       "en": {
         "title": "Latte Art Masterclass",
@@ -348,7 +370,7 @@
       "past": true,
       "image": "/images/pages/events/event-image1.png",
       "location": "Cup of Hope Café, Surabaya",
-      "date": "October 10, 2024",
+      "date": "2024-10-10",
       "time": "19.00 - 21.00 WIB",
       "en": {
         "title": "Coffee Brewing Techniques Workshop",
@@ -372,7 +394,7 @@
     {
       "slug": "empowering-youth-through-barista-training",
       "image": "/images/pages/article/article-image1.png",
-      "date": "May 18, 2025",
+      "date": "2025-05-18",
       "en": {
         "title": "Empowering Youth Through Barista Training",
         "body": [
@@ -397,7 +419,7 @@
     {
       "slug": "the-art-of-brewing-the-perfect-cup-of-coffee",
       "image": "/images/pages/article/article-image2.png",
-      "date": "May 18, 2025",
+      "date": "2025-05-18",
       "en": {
         "title": "The Art of Brewing the Perfect Cup of Coffee",
         "body": [
@@ -424,7 +446,7 @@
     {
       "slug": "exploring-the-rich-history-of-coffee-around-the-world",
       "image": "/images/pages/article/article-image3.png",
-      "date": "May 18, 2025",
+      "date": "2025-05-18",
       "en": {
         "title": "Exploring the Rich History of Coffee Around the World",
         "body": [
@@ -451,7 +473,7 @@
     {
       "slug": "how-coffee-affects-your-mood-and-productivity",
       "image": "/images/pages/article/article-image3-1.png",
-      "date": "May 18, 2025",
+      "date": "2025-05-18",
       "en": {
         "title": "How Coffee Affects Your Mood and Productivity",
         "body": [
@@ -478,7 +500,7 @@
     {
       "slug": "building-community-one-cup-at-a-time",
       "image": "/images/pages/article/article-image1.png",
-      "date": "May 15, 2025",
+      "date": "2025-05-15",
       "en": {
         "title": "Building Community One Cup at a Time",
         "body": [
@@ -505,7 +527,7 @@
     {
       "slug": "from-bean-to-cup-the-journey-of-our-coffee",
       "image": "/images/pages/article/article-image2.png",
-      "date": "May 12, 2025",
+      "date": "2025-05-12",
       "en": {
         "title": "From Bean to Cup: The Journey of Our Coffee",
         "body": [
@@ -527,6 +549,22 @@
           "The beans then travel to our roastery, where our master roaster carefully develops each batch's flavor profile. Roasting is both science and art—the roaster must understand how time and temperature interact to bring out the best in each bean. A few seconds can make the difference between a perfectly balanced cup and one that's over or underdeveloped.",
           "Finally, the roasted beans arrive at our café, where our baristas grind them fresh for each order and prepare them with care and skill. This final step in the journey is where all the previous work comes together. When you take that first sip, you're tasting the result of months of growth, careful processing, expert roasting, and skilled preparation. It's a journey worth savoring."
         ]
+      }
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Joy",
+      "image": "/images/pages/home/testi1.png",
+      "en": {
+        "quote": "You will make it guys, because God carries you. Don't you worry, He is in control.",
+        "story": "For Joy, it was deeply personal. Just five minutes before stepping into Cup of Hope, she had been telling her friends how anxious she felt about an upcoming trip to another city. She was overwhelmed and uncertain. Then came the card with the exact words she needed. At that moment, she felt strengthened. Reminded that God is always one step ahead, and she isn't alone.",
+        "origin": "from Hong Kong"
+      },
+      "id": {
+        "quote": "Kalian pasti bisa, karena Tuhan menopang kalian. Jangan khawatir, Dia yang memegang kendali.",
+        "story": "Bagi Joy, ini sangat pribadi. Lima menit sebelum memasuki Cup of Hope, dia bercerita kepada teman-temannya betapa cemasnya ia dengan perjalanan ke kota lain. Ia kewalahan dan tidak pasti. Lalu datang kartu dengan kata-kata yang tepat yang ia butuhkan. Saat itu, ia merasa dikuatkan. Diingatkan bahwa Tuhan selalu selangkah di depan, dan ia tidak sendirian.",
+        "origin": "dari Hong Kong"
       }
     }
   ]

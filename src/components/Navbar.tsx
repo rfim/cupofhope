@@ -12,6 +12,8 @@ export default function Navbar({ locale, dict }: { locale: Locale; dict: Diction
   const [open, setOpen] = useState(false);
   const rest = pathname.replace(/^\/(en|id)/, "");
 
+  const isActive = (href: string) => (href === `/${locale}` ? rest === "" || rest === "/" : pathname.startsWith(href));
+
   const links = [
     { href: `/${locale}`, label: dict.nav.home },
     { href: `/${locale}/about`, label: dict.nav.about },
@@ -29,7 +31,11 @@ export default function Navbar({ locale, dict }: { locale: Locale; dict: Diction
         <ul className="absolute left-1/2 hidden -translate-x-1/2 gap-8 md:flex">
           {links.map((l) => (
             <li key={l.href}>
-              <Link href={l.href} className="text-[15px] font-medium text-neutral-800 transition-colors hover:text-primary-700">
+              <Link
+                href={l.href}
+                aria-current={isActive(l.href) ? "page" : undefined}
+                className={`relative text-[15px] font-medium transition-colors hover:text-primary-700 ${isActive(l.href) ? "text-primary-700 after:absolute after:-bottom-1.5 after:left-1/2 after:h-1 after:w-1 after:-translate-x-1/2 after:rounded-full after:bg-primary-600" : "text-neutral-800"}`}
+              >
                 {l.label}
               </Link>
             </li>
@@ -61,7 +67,7 @@ export default function Navbar({ locale, dict }: { locale: Locale; dict: Diction
           <ul className="flex flex-col gap-4">
             {links.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} onClick={() => setOpen(false)} className="text-base font-medium">
+                <Link href={l.href} onClick={() => setOpen(false)} className={`text-base font-medium ${isActive(l.href) ? "text-primary-700" : ""}`}>
                   {l.label}
                 </Link>
               </li>

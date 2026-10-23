@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { CONTACT_EMAIL, WHATSAPP_URL, type Dictionary, type Locale } from "@/i18n";
+import SecretLogo from "./SecretLogo";
 
 export default function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const f = dict.footer;
@@ -8,7 +8,7 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
     <footer className="mx-auto max-w-[1066px] px-4 pb-8 pt-16">
       <div className="grid gap-10 md:grid-cols-[1fr_auto_auto] md:gap-24">
         <div className="max-w-[330px]">
-          <Image src="/images/logos/coh_logo_full.png" alt="Cup of Hope coffee" width={100} height={79} />
+          <SecretLogo />
           <p className="mt-8 text-sm leading-relaxed">{f.description}</p>
         </div>
         <div>
@@ -26,7 +26,7 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
             <li><Link className="hover:underline" href={`/${locale}/about`}>{f.our_story}</Link></li>
             <li><a className="hover:underline" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">{f.get_involved}</a></li>
           </ul>
-          <div className="mt-8 md:hidden">
+          <div className="mt-8">
             <h3 className="mb-4 font-medium">{f.contact}</h3>
             <a className="text-sm hover:underline" href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
           </div>

@@ -5,7 +5,7 @@ import SecretLogo from "./SecretLogo";
 export default function Footer({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const f = dict.footer;
   return (
-    <footer className="mx-auto max-w-[1066px] px-4 pb-8 pt-16">
+    <footer className="mx-auto max-w-[1066px] px-5 pb-[calc(96px+env(safe-area-inset-bottom))] pt-16 md:px-4 md:pb-8">
       <div className="grid gap-10 md:grid-cols-[1fr_auto_auto] md:gap-24">
         <div className="max-w-[330px]">
           <SecretLogo />

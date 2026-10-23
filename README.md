@@ -23,11 +23,22 @@ src/
 public/images/           logos, illustrations and photos
 ```
 
+## Mobile app experience
+
+On phones the site switches to an app-style layout: a slim top bar, a bottom tab bar (Home, Menu, Cards, Events, Stories) and an app-like home screen.
+
+- **Cards of Hope** (`/cards`): collectible digital versions of the printed cards. Visitors get a welcome card, can open one free card a day from the orb, and can unlock a specific card by typing the code printed on a physical card. Cards have four rarities (common, rare, epic, legendary) with silver, gold or holographic foil. The collection is stored in the visitor's browser.
+- **Menu** (`/menu`): the full 2026 menu with search, category chips, a promo, item sheets with hot/ice options, and an order list to show the barista. If a WhatsApp number is set in admin, visitors can also send the order via WhatsApp.
+- **Branches**: live open/closed status (WIB) and directions for Surabaya and Malang.
+- Every button, card and icon has tap feedback, which turns off when the device asks for reduced motion.
+
+Menu photos live in `public/images/menu/`. They are cut out and centered on a solid cream square, with no transparency.
+
 ## Admin panel (easter egg)
 
 Type **`open sesame`** anywhere on the site (or tap the footer logo 5 times on a phone) to open `/admin/`, then enter the PIN. The default PIN is **111111**; change it under Pengaturan → Ganti PIN.
 
-From the panel you can add, edit, reorder, duplicate and delete events, articles and testimonials in both languages, upload images (resized to WebP in the browser), and edit the WhatsApp link, email and impact stats. **Publikasikan** commits all changes to `main` as one commit, and GitHub Pages redeploys in about 1–2 minutes.
+From the panel you can add, edit, reorder, duplicate and delete Cards of Hope (with live preview and unlock codes), menu items (price, labels, photo, sold out), events, articles and testimonials in both languages, set branch hours, upload images (resized to WebP in the browser), and edit the WhatsApp link, email and impact stats. **Publikasikan** commits all changes to `main` as one commit, and GitHub Pages redeploys in about 1–2 minutes.
 
 Saving needs a GitHub fine-grained personal access token, entered once per browser under Pengaturan:
 - Repository access: only `rfim/cupofhope`

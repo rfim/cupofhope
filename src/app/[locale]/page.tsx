@@ -4,6 +4,7 @@ import Link from "next/link";
 import ConnectCta from "@/components/ConnectCta";
 import EventCard from "@/components/EventCard";
 import JsonLd from "@/components/JsonLd";
+import MobileHome from "@/components/mobile/MobileHome";
 import Reveal from "@/components/Reveal";
 import Testimonials from "@/components/Testimonials";
 import { settings, testimonials, upcomingEvents } from "@/data";
@@ -37,6 +38,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
   return (
     <>
       <JsonLd data={cafe} />
+      <MobileHome locale={locale} dict={dict} />
+      <div className="hidden md:block">
       <section className="bg-grid mx-auto flex min-h-[560px] max-w-[1120px] flex-col items-center justify-center px-6 pb-16 pt-36 text-center md:min-h-[760px]">
         <h1 className="animate-fade-in text-5xl font-semibold leading-[1.1] md:text-[72px]">
           {h.hero_title[0]}<br />{h.hero_title[1]}
@@ -83,6 +86,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: L
       </section>
 
       <ConnectCta dict={dict} />
+      </div>
     </>
   );
 }

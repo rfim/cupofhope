@@ -11,3 +11,10 @@ export const lufga = localFont({
   variable: "--font-lufga",
   display: "swap",
 });
+
+// Handwriting, as on the printed Cards of Hope ("reminder for you", "with love,").
+export const caveat = localFont({
+  src: [{ path: "./fonts/Caveat.woff2", weight: "400 700", style: "normal" }],
+  variable: "--font-caveat",
+  display: "swap",
+});

@@ -2,6 +2,9 @@
 
 @theme {
   --font-sans: var(--font-lufga), ui-sans-serif, system-ui, sans-serif;
+  --font-script: var(--font-caveat), "Segoe Script", cursive;
+  --color-cream: #f7f4ee;
+  --color-ink: #1d1b18;
   --color-black: #0d0c0c;
   --color-primary: #fbdc08;
   --color-primary-100: #eee7da;
@@ -83,4 +86,238 @@ body {
 
 .animate-shake {
   animation: shake 0.45s both;
+}
+
+/* ---------- Cards of Hope: foil + holo ---------- */
+.card-sheen {
+  background: linear-gradient(115deg, transparent 30%, rgb(255 255 255 / 0.55) 45%, transparent 60%);
+  background-size: 250% 100%;
+  background-position: var(--sheen-x, 120%) 0;
+  mix-blend-mode: soft-light;
+  animation: sheen 4.5s ease-in-out infinite;
+}
+
+.card-holo {
+  background:
+    linear-gradient(115deg, transparent 30%, rgb(255 255 255 / 0.6) 45%, transparent 60%),
+    repeating-linear-gradient(125deg, #ff9a9e 0%, #fad0c4 8%, #fbc2eb 16%, #a1c4fd 24%, #c2e9fb 32%, #d4fc79 40%, #ff9a9e 48%);
+  background-size: 250% 100%, 300% 300%;
+  mix-blend-mode: color-dodge;
+  opacity: 0.32;
+  animation: sheen 4.5s ease-in-out infinite, holo 8s linear infinite;
+}
+
+.card-tilting .card-sheen,
+.card-tilting .card-holo {
+  animation: none;
+  background-position: var(--sheen-x) 0, var(--holo-x, 50%) var(--holo-y, 50%);
+}
+
+@keyframes sheen {
+  0%, 100% { background-position: 120% 0, 0% 0%; }
+  50% { background-position: -20% 0, 100% 100%; }
+}
+
+@keyframes holo {
+  to { background-position: -20% 0, 300% 300%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-sheen, .card-holo { animation: none; }
+}
+
+/* ---------- Daily pack ---------- */
+.pack-foil {
+  background:
+    linear-gradient(115deg, transparent 25%, rgb(255 255 255 / 0.55) 42%, transparent 58%),
+    linear-gradient(160deg, #fde871 0%, #fbdc08 40%, #f1c400 70%, #fbe36a 100%);
+  background-size: 250% 100%, 100% 100%;
+  animation: sheen 3s ease-in-out infinite;
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.06), inset 0 -40px 60px -30px rgb(120 80 0 / 0.25);
+}
+
+.pack {
+  box-shadow: 0 30px 60px -20px rgb(0 0 0 / 0.6);
+}
+
+.pack-idle {
+  animation: pack-float 3.2s ease-in-out infinite;
+}
+
+.pack-tear {
+  animation: pack-shake 0.45s ease-in-out, pack-away 0.35s 0.45s ease-in forwards;
+}
+
+.pack-tear .pack-top {
+  animation: pack-rip 0.4s 0.3s ease-in forwards;
+  background: #fbe36a;
+}
+
+@keyframes pack-float {
+  0%, 100% { transform: translateY(0) rotate(-1.5deg); }
+  50% { transform: translateY(-10px) rotate(1.5deg); }
+}
+
+@keyframes pack-shake {
+  0%, 100% { transform: rotate(0); }
+  20% { transform: rotate(-4deg) scale(1.02); }
+  40% { transform: rotate(4deg) scale(1.04); }
+  60% { transform: rotate(-3deg) scale(1.03); }
+  80% { transform: rotate(2deg) scale(1.02); }
+}
+
+@keyframes pack-rip {
+  to { transform: translate(40%, -160%) rotate(28deg); opacity: 0; }
+}
+
+@keyframes pack-away {
+  to { transform: translateY(70%) scale(0.9); opacity: 0; }
+}
+
+.pack-burst {
+  animation: burst 1.4s ease-out both;
+}
+
+@keyframes burst {
+  from { transform: scale(0.3); opacity: 0; }
+  30% { opacity: 1; }
+  to { transform: scale(1); opacity: 0.85; }
+}
+
+.pack-spark {
+  animation: spark 1s ease-out both;
+}
+
+@keyframes spark {
+  from { transform: rotate(var(--a)) translateY(0) scale(1); opacity: 1; }
+  to { transform: rotate(var(--a)) translateY(-190px) scale(0.2); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pack-idle, .pack-foil, .pack-burst, .pack-spark { animation: none; }
+}
+
+/* ---------- Daily orb ---------- */
+.orb {
+  box-shadow: inset -8px -10px 24px rgb(160 60 0 / 0.35), inset 6px 8px 18px rgb(255 255 255 / 0.7), 0 18px 40px -12px rgb(224 116 43 / 0.55);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.orb-ready {
+  animation: orb-breathe 2.6s ease-in-out infinite;
+}
+
+button:active .orb {
+  transform: scale(0.92);
+}
+
+button:disabled .orb {
+  filter: saturate(0.35) brightness(1.05);
+}
+
+@keyframes orb-breathe {
+  0%, 100% { transform: scale(1); box-shadow: inset -8px -10px 24px rgb(160 60 0 / 0.35), inset 6px 8px 18px rgb(255 255 255 / 0.7), 0 18px 40px -12px rgb(224 116 43 / 0.55); }
+  50% { transform: scale(1.05); box-shadow: inset -8px -10px 24px rgb(160 60 0 / 0.35), inset 6px 8px 18px rgb(255 255 255 / 0.7), 0 22px 60px -8px rgb(251 220 8 / 0.8); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orb-ready { animation: none; }
+}
+
+/* ---------- Sheets & utilities ---------- */
+.sheet-up {
+  animation: sheet-up 0.42s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes sheet-up {
+  from { transform: translateY(100%); }
+  to { transform: none; }
+}
+
+@media (min-width: 768px) {
+  .sheet-up { animation: fade-in 0.3s ease both; }
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sheet-up { animation: none; }
+}
+
+/* ---------- Tap feedback on every interactive object ---------- */
+a, button, [role="button"], [role="option"], label, summary, .tap-card {
+  -webkit-tap-highlight-color: transparent;
+  transition-property: scale, color, background-color, border-color, opacity, box-shadow, filter;
+  transition-duration: 0.18s;
+  transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+a:active, button:not(:disabled):active, [role="button"]:active, label:active, summary:active {
+  scale: 0.96;
+}
+
+.tap-card:not(:disabled):active {
+  scale: 0.95;
+  rotate: -1.5deg;
+}
+
+/* photos inside a tapped card zoom slightly for depth */
+a img, button img {
+  transition: scale 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+a:active img, button:not(:disabled):active img {
+  scale: 1.05;
+}
+
+[data-no-press]:active, [data-no-press] *:active {
+  scale: none;
+}
+
+.icon-pop { animation: icon-pop 0.42s cubic-bezier(0.3, 1.6, 0.5, 1); }
+.icon-spin { animation: icon-spin 0.5s cubic-bezier(0.3, 1.4, 0.5, 1); }
+.icon-wiggle { animation: icon-wiggle 0.5s ease-in-out; }
+.icon-bounce { animation: icon-bounce 0.45s cubic-bezier(0.3, 1.6, 0.5, 1); }
+.icon-flip { animation: icon-flip 0.55s cubic-bezier(0.3, 1.3, 0.5, 1); }
+
+@keyframes icon-pop {
+  0% { scale: 1; }
+  35% { scale: 0.72; }
+  70% { scale: 1.18; }
+  100% { scale: 1; }
+}
+
+@keyframes icon-spin {
+  from { rotate: 0deg; scale: 0.8; }
+  to { rotate: 180deg; scale: 1; }
+}
+
+@keyframes icon-wiggle {
+  0%, 100% { rotate: 0deg; }
+  20% { rotate: -14deg; }
+  40% { rotate: 12deg; }
+  60% { rotate: -8deg; }
+  80% { rotate: 4deg; }
+}
+
+@keyframes icon-bounce {
+  0%, 100% { translate: 0 0; }
+  40% { translate: 0 -5px; scale: 1.1; }
+  70% { translate: 0 1px; scale: 0.95; }
+}
+
+@keyframes icon-flip {
+  from { transform: perspective(200px) rotateY(0deg); }
+  to { transform: perspective(200px) rotateY(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a:active, button:active, [role="button"]:active, .tap-card:active { scale: none; rotate: none; }
+  .icon-pop, .icon-spin, .icon-wiggle, .icon-bounce, .icon-flip { animation: none; }
 }

@@ -19,7 +19,45 @@
         "en": "Nations Connected",
         "id": "Negara Terhubung"
       }
-    ]
+    ],
+    "welcomeCard": 9,
+    "branches": [
+      {
+        "name": "Surabaya",
+        "address": "Jl. Opak 20, Surabaya",
+        "instagram": "",
+        "hours": {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "open": "11:00",
+          "close": "21:00"
+        }
+      },
+      {
+        "name": "Malang",
+        "address": "Jl. Puncak Jaya Ujung Kav. 9-10, Malang",
+        "instagram": "cupofhope.mlg",
+        "hours": {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "open": "11:00",
+          "close": "21:00"
+        }
+      }
+    ],
+    "whatsappNumber": ""
   },
   "events": [
     {
@@ -567,5 +605,1201 @@
         "origin": "dari Hong Kong"
       }
     }
-  ]
+  ],
+  "cards": [
+    {
+      "number": 1,
+      "rarity": "legendary",
+      "series": "Card of Hope",
+      "palette": "sun",
+      "motif": "sun",
+      "style": "classic",
+      "en": {
+        "title": "Carried",
+        "message": "*You will make it guys, because God carries you.* Don't you worry, He is in control."
+      },
+      "id": {
+        "title": "Ditopang",
+        "message": "*Kalian pasti bisa, karena Tuhan menopang kalian.* Jangan khawatir, Dia yang memegang kendali."
+      }
+    },
+    {
+      "number": 2,
+      "rarity": "epic",
+      "series": "Refill Your Hope",
+      "palette": "cream",
+      "motif": "leaf",
+      "style": "classic",
+      "en": {
+        "title": "Never Stop Fighting",
+        "message": "Dear, *God will never stop fighting for you.* Even when you can't fight for your own self."
+      },
+      "id": {
+        "title": "Tak Berhenti Berjuang",
+        "message": "Yang terkasih, *Tuhan tidak akan pernah berhenti berjuang untukmu.* Bahkan ketika kamu tidak bisa berjuang untuk dirimu sendiri."
+      }
+    },
+    {
+      "number": 3,
+      "rarity": "rare",
+      "series": "July Hope",
+      "palette": "sky",
+      "motif": "wave",
+      "style": "script",
+      "en": {
+        "title": "Nothing Too Small",
+        "message": "Hey, there's nothing too small to pray for. Keep praying and believing!"
+      },
+      "id": {
+        "title": "Tak Ada yang Terlalu Kecil",
+        "message": "Hey, tidak ada hal yang terlalu kecil untuk didoakan. Tetaplah berdoa dan percaya!"
+      }
+    },
+    {
+      "number": 4,
+      "rarity": "rare",
+      "series": "Card of Hope",
+      "palette": "lilac",
+      "motif": "heart",
+      "style": "classic",
+      "en": {
+        "title": "The Right One",
+        "message": "Dear, the right one will love you the way God loves you. The right one will put God first. And the right one will pray for you and with you."
+      },
+      "id": {
+        "title": "Orang yang Tepat",
+        "message": "Kesayangan, orang yang tepat akan mencintaimu seperti Tuhan mencintaimu. Orang yang tepat akan meletakkan Tuhan sebagai yang terutama. Dan orang yang tepat akan berdoa untukmu dan bersamamu."
+      }
+    },
+    {
+      "number": 5,
+      "rarity": "rare",
+      "series": "Card of Hope",
+      "palette": "sky",
+      "motif": "door",
+      "style": "classic",
+      "en": {
+        "title": "Begin Again",
+        "message": "It's never too late to start over. Today is a fresh page, and grace writes the first line."
+      },
+      "id": {
+        "title": "Mulai Lagi",
+        "message": "Tidak pernah terlambat untuk memulai lagi. Hari ini halaman baru, dan anugerah menulis baris pertamanya."
+      }
+    },
+    {
+      "number": 6,
+      "rarity": "common",
+      "series": "Card of Hope",
+      "palette": "lilac",
+      "motif": "heart",
+      "style": "classic",
+      "en": {
+        "title": "Not Alone",
+        "message": "Even on your quietest days, you are *seen, known, and deeply loved.*"
+      },
+      "id": {
+        "title": "Tidak Sendiri",
+        "message": "Bahkan di hari tersepimu, kamu *dilihat, dikenal, dan sangat dikasihi.*"
+      }
+    },
+    {
+      "number": 7,
+      "rarity": "epic",
+      "series": "Card of Hope",
+      "palette": "coral",
+      "motif": "sun",
+      "style": "classic",
+      "en": {
+        "title": "Light Breaks Through",
+        "message": "The darkest night still ends in morning. Hold on, light is on its way."
+      },
+      "id": {
+        "title": "Terang Menembus",
+        "message": "Malam tergelap tetap berakhir dengan pagi. Bertahanlah, terang sedang datang."
+      }
+    },
+    {
+      "number": 8,
+      "rarity": "common",
+      "series": "Card of Hope",
+      "palette": "lime",
+      "motif": "mountain",
+      "style": "classic",
+      "en": {
+        "title": "Small Steps",
+        "message": "Small steps still move you forward. Be proud of how far you've come."
+      },
+      "id": {
+        "title": "Langkah Kecil",
+        "message": "Langkah kecil tetap membawamu maju. Banggalah dengan sejauh apa kamu sudah melangkah."
+      }
+    },
+    {
+      "number": 9,
+      "rarity": "rare",
+      "series": "Card of Hope",
+      "palette": "clay",
+      "motif": "home",
+      "style": "classic",
+      "en": {
+        "title": "Home",
+        "message": "You belong here. There is always a seat at the table for you."
+      },
+      "id": {
+        "title": "Rumah",
+        "message": "Kamu punya tempat di sini. Selalu ada kursi di meja ini untukmu."
+      }
+    },
+    {
+      "number": 10,
+      "rarity": "common",
+      "series": "Card of Hope",
+      "palette": "mint",
+      "motif": "wave",
+      "style": "script",
+      "en": {
+        "title": "Rest",
+        "message": "You don't have to carry everything today. Breathe, rest, and let go of what isn't yours to hold."
+      },
+      "id": {
+        "title": "Istirahat",
+        "message": "Kamu tidak harus memikul semuanya hari ini. Tarik napas, beristirahat, dan lepaskan yang bukan bebanmu."
+      }
+    },
+    {
+      "number": 11,
+      "rarity": "rare",
+      "series": "Card of Hope",
+      "palette": "lime",
+      "motif": "leaf",
+      "style": "classic",
+      "en": {
+        "title": "Rooted",
+        "message": "Storms may shake the branches, but your roots are held by something stronger."
+      },
+      "id": {
+        "title": "Berakar",
+        "message": "Badai mungkin mengguncang ranting, tapi akarmu dipegang oleh yang lebih kuat."
+      }
+    },
+    {
+      "number": 12,
+      "rarity": "common",
+      "series": "Card of Hope",
+      "palette": "coral",
+      "motif": "spark",
+      "style": "classic",
+      "en": {
+        "title": "Brave",
+        "message": "Courage isn't the absence of fear. It's taking the next step anyway."
+      },
+      "id": {
+        "title": "Berani",
+        "message": "Keberanian bukan berarti tanpa rasa takut. Itu adalah tetap melangkah walau takut."
+      }
+    },
+    {
+      "number": 13,
+      "rarity": "common",
+      "series": "Card of Hope",
+      "palette": "pink",
+      "motif": "star",
+      "style": "classic",
+      "en": {
+        "title": "Worth It",
+        "message": "Your worth isn't measured by what you produce. *You are enough,* just as you are."
+      },
+      "id": {
+        "title": "Berharga",
+        "message": "Nilaimu tidak diukur dari hasil kerjamu. *Kamu cukup,* apa adanya."
+      }
+    },
+    {
+      "number": 14,
+      "rarity": "epic",
+      "series": "Card of Hope",
+      "palette": "sky",
+      "motif": "sun",
+      "style": "classic",
+      "en": {
+        "title": "New Mercies",
+        "message": "Yesterday's mistakes don't get the last word. *Every morning brings new mercy.*"
+      },
+      "id": {
+        "title": "Kemurahan Baru",
+        "message": "Kesalahan kemarin bukan kata terakhir. *Setiap pagi membawa kemurahan yang baru.*"
+      }
+    },
+    {
+      "number": 15,
+      "rarity": "common",
+      "series": "Card of Hope",
+      "palette": "pink",
+      "motif": "flower",
+      "style": "classic",
+      "en": {
+        "title": "Bloom",
+        "message": "Growth takes time. Even now, something good is blooming in you."
+      },
+      "id": {
+        "title": "Mekar",
+        "message": "Bertumbuh butuh waktu. Bahkan sekarang, sesuatu yang baik sedang mekar dalam dirimu."
+      }
+    },
+    {
+      "number": 16,
+      "rarity": "rare",
+      "series": "Card of Hope",
+      "palette": "sun",
+      "motif": "star",
+      "style": "classic",
+      "en": {
+        "title": "Purpose",
+        "message": "You were made on purpose, for a purpose. Your story matters."
+      },
+      "id": {
+        "title": "Tujuan",
+        "message": "Kamu diciptakan dengan sengaja, untuk sebuah tujuan. Kisahmu berarti."
+      }
+    },
+    {
+      "number": 17,
+      "rarity": "common",
+      "series": "Card of Hope",
+      "palette": "mint",
+      "motif": "drop",
+      "style": "classic",
+      "en": {
+        "title": "Peace",
+        "message": "May peace find you in the middle of the noise today."
+      },
+      "id": {
+        "title": "Damai",
+        "message": "Kiranya damai menemukanmu di tengah hiruk-pikuk hari ini."
+      }
+    },
+    {
+      "number": 18,
+      "rarity": "rare",
+      "series": "Card of Hope",
+      "palette": "coral",
+      "motif": "cup",
+      "style": "classic",
+      "en": {
+        "title": "Hope Changer",
+        "message": "Someone needs the kindness only you can give. Go be their hope today."
+      },
+      "id": {
+        "title": "Hope Changer",
+        "message": "Seseorang butuh kebaikan yang hanya bisa kamu berikan. Jadilah harapan bagi mereka hari ini."
+      }
+    },
+    {
+      "number": 19,
+      "rarity": "common",
+      "series": "Card of Hope",
+      "palette": "lilac",
+      "motif": "mountain",
+      "style": "classic",
+      "en": {
+        "title": "Still Here",
+        "message": "You have made it through every hard day so far. That is strength."
+      },
+      "id": {
+        "title": "Masih di Sini",
+        "message": "Kamu sudah melewati setiap hari yang berat sampai saat ini. Itulah kekuatan."
+      }
+    },
+    {
+      "number": 20,
+      "rarity": "epic",
+      "series": "Card of Hope",
+      "palette": "lilac",
+      "motif": "heart",
+      "style": "classic",
+      "en": {
+        "title": "Held",
+        "message": "When you can't hold on, you are *still being held.*"
+      },
+      "id": {
+        "title": "Dipegang",
+        "message": "Saat kamu tak sanggup bertahan, kamu *tetap sedang dipegang.*"
+      }
+    },
+    {
+      "number": 21,
+      "rarity": "rare",
+      "series": "Card of Hope",
+      "palette": "sun",
+      "motif": "sun",
+      "style": "classic",
+      "en": {
+        "title": "Joy in the Morning",
+        "message": "Tears may stay for the night, but joy comes with the morning."
+      },
+      "id": {
+        "title": "Sukacita di Pagi Hari",
+        "message": "Tangis mungkin bermalam, tapi sukacita datang di pagi hari."
+      }
+    },
+    {
+      "number": 22,
+      "rarity": "common",
+      "series": "Card of Hope",
+      "palette": "sky",
+      "motif": "spark",
+      "style": "script",
+      "en": {
+        "title": "Dream Again",
+        "message": "It's safe to dream again. Your future is brighter than your past."
+      },
+      "id": {
+        "title": "Bermimpi Lagi",
+        "message": "Tidak apa-apa untuk bermimpi lagi. Masa depanmu lebih cerah dari masa lalumu."
+      }
+    },
+    {
+      "number": 23,
+      "rarity": "common",
+      "series": "Card of Hope",
+      "palette": "clay",
+      "motif": "cup",
+      "style": "classic",
+      "en": {
+        "title": "One Cup at a Time",
+        "message": "Big changes start with small moments, like sharing a cup with a friend."
+      },
+      "id": {
+        "title": "Satu Cangkir Sekali Waktu",
+        "message": "Perubahan besar dimulai dari momen kecil, seperti berbagi secangkir kopi dengan sahabat."
+      }
+    },
+    {
+      "number": 24,
+      "rarity": "common",
+      "series": "Card of Hope",
+      "palette": "mint",
+      "motif": "leaf",
+      "style": "script",
+      "en": {
+        "title": "Gentle",
+        "message": "Be gentle with yourself. You're still learning, and that's okay."
+      },
+      "id": {
+        "title": "Lembut",
+        "message": "Lembutlah pada dirimu sendiri. Kamu masih belajar, dan itu tidak apa-apa."
+      }
+    },
+    {
+      "number": 25,
+      "rarity": "epic",
+      "series": "Card of Hope",
+      "palette": "clay",
+      "motif": "home",
+      "style": "classic",
+      "en": {
+        "title": "Faithful",
+        "message": "The One who began a good work in you will carry it on to completion."
+      },
+      "id": {
+        "title": "Setia",
+        "message": "Dia yang memulai pekerjaan baik di dalammu akan menyelesaikannya."
+      }
+    },
+    {
+      "number": 26,
+      "rarity": "common",
+      "series": "Card of Hope",
+      "palette": "lime",
+      "motif": "drop",
+      "style": "classic",
+      "en": {
+        "title": "Enough for Today",
+        "message": "There is grace enough for today. Tomorrow will have its own."
+      },
+      "id": {
+        "title": "Cukup untuk Hari Ini",
+        "message": "Anugerah cukup untuk hari ini. Esok punya anugerahnya sendiri."
+      }
+    },
+    {
+      "number": 27,
+      "rarity": "rare",
+      "series": "Card of Hope",
+      "palette": "pink",
+      "motif": "spark",
+      "style": "classic",
+      "en": {
+        "title": "Shine",
+        "message": "You carry a light this city needs. Don't hide it."
+      },
+      "id": {
+        "title": "Bersinar",
+        "message": "Kamu membawa terang yang dibutuhkan kota ini. Jangan sembunyikan."
+      }
+    }
+  ],
+  "menu": {
+    "categories": [
+      {
+        "id": "coffee",
+        "en": "Coffee",
+        "emoji": "☕",
+        "addons": "extra shot +5 · caramel sauce +5 · oat milk +5",
+        "groups": [
+          {
+            "en": "Classic coffee series",
+            "items": [
+              {
+                "id": "hot-vietnam-drip",
+                "name": "Hot Vietnam Drip",
+                "price": 20,
+                "image": "/images/menu/hot-vietnam-drip.webp"
+              },
+              {
+                "id": "americano",
+                "name": "Americano",
+                "price": 25,
+                "variants": [
+                  "hot",
+                  "ice"
+                ]
+              },
+              {
+                "id": "honeyricano",
+                "name": "Honeyricano",
+                "price": 30,
+                "desc": {
+                  "en": "Americano sweetened with honey.",
+                  "id": "Americano dengan manis madu."
+                }
+              }
+            ],
+            "id_name": "Seri kopi klasik"
+          },
+          {
+            "en": "Signature coffee series",
+            "items": [
+              {
+                "id": "ice-black-summer",
+                "name": "Ice Black Summer",
+                "price": 30
+              },
+              {
+                "id": "ice-tropical-coffee",
+                "name": "Ice Tropical Coffee",
+                "price": 30
+              },
+              {
+                "id": "ice-choco-coffee",
+                "name": "Ice Choco Coffee",
+                "price": 30,
+                "desc": {
+                  "en": "A combination of espresso and choco crunchy.",
+                  "id": "Perpaduan espresso dan choco crunchy."
+                },
+                "image": "/images/menu/ice-choco-coffee.webp"
+              }
+            ],
+            "id_name": "Seri kopi signature"
+          },
+          {
+            "en": "White coffee series",
+            "items": [
+              {
+                "id": "cappuccino",
+                "name": "Cappuccino",
+                "price": 27,
+                "variants": [
+                  "hot",
+                  "ice"
+                ]
+              },
+              {
+                "id": "ice-latte",
+                "name": "Ice Latte",
+                "price": 27,
+                "image": "/images/menu/ice-latte.webp"
+              },
+              {
+                "id": "ice-vanilla-latte",
+                "name": "Ice Vanilla Latte",
+                "price": 27,
+                "image": "/images/menu/ice-vanilla-latte.webp"
+              },
+              {
+                "id": "ice-palm-sugar-coffee",
+                "name": "Ice Palm Sugar Coffee",
+                "price": 27,
+                "desc": {
+                  "en": "Milk coffee sweetened with palm sugar.",
+                  "id": "Kopi susu dengan manis gula aren."
+                },
+                "image": "/images/menu/ice-palm-sugar-coffee.webp"
+              },
+              {
+                "id": "ice-butterscotch",
+                "name": "Ice Butterscotch",
+                "price": 30,
+                "tags": [
+                  "rec"
+                ],
+                "desc": {
+                  "en": "Milk-based coffee drink with hints of caramel.",
+                  "id": "Minuman kopi susu dengan sentuhan karamel."
+                },
+                "image": "/images/menu/ice-butterscotch.webp"
+              },
+              {
+                "id": "ice-baileys",
+                "name": "Ice Baileys",
+                "price": 30,
+                "tags": [
+                  "rec"
+                ],
+                "desc": {
+                  "en": "Milk-based coffee drink with hints of vanilla and rum.",
+                  "id": "Minuman kopi susu dengan sentuhan vanila dan rum."
+                },
+                "image": "/images/menu/ice-baileys.webp"
+              },
+              {
+                "id": "ice-caramel-macchiato",
+                "name": "Ice Caramel Macchiato",
+                "price": 30,
+                "tags": [
+                  "rec"
+                ]
+              },
+              {
+                "id": "hot-creme-brulee",
+                "name": "Hot Creme Brulee",
+                "price": 30,
+                "desc": {
+                  "en": "Steamed milk-based coffee drink with caramelized brown sugar on top.",
+                  "id": "Kopi susu hangat dengan gula merah karamel di atasnya."
+                },
+                "image": "/images/menu/hot-creme-brulee.webp"
+              },
+              {
+                "id": "oat-matcha-espresso",
+                "name": "Oat Matcha Espresso",
+                "price": 30,
+                "tags": [
+                  "oat"
+                ]
+              }
+            ],
+            "id_name": "Seri kopi susu"
+          }
+        ],
+        "id_name": "Kopi"
+      },
+      {
+        "id": "non-coffee",
+        "en": "Non Coffee",
+        "emoji": "🍵",
+        "groups": [
+          {
+            "en": "Tea series",
+            "items": [
+              {
+                "id": "hot-wedang-uwuh",
+                "name": "Hot Wedang Uwuh",
+                "price": 15,
+                "desc": {
+                  "en": "Traditional Javanese spiced herbal drink.",
+                  "id": "Minuman rempah tradisional Jawa."
+                }
+              },
+              {
+                "id": "java-tea",
+                "name": "Java Tea",
+                "price": 20,
+                "image": "/images/menu/ice-java-tea.webp"
+              },
+              {
+                "id": "hot-artisan-tea",
+                "name": "Hot Artisan Tea",
+                "price": 20
+              },
+              {
+                "id": "ice-passion-tea",
+                "name": "Ice Passion Tea",
+                "price": 27,
+                "desc": {
+                  "en": "Tea-based drink with a lemon slice and hints of passion fruit and mango.",
+                  "id": "Minuman teh dengan irisan lemon, sentuhan markisa dan mangga."
+                }
+              },
+              {
+                "id": "ice-lychee-tea",
+                "name": "Ice Lychee Tea",
+                "price": 27,
+                "image": "/images/menu/ice-lychee-tea.webp"
+              },
+              {
+                "id": "ice-lemon-tea",
+                "name": "Ice Lemon Tea",
+                "price": 27
+              },
+              {
+                "id": "ice-tea-tarik",
+                "name": "Ice Tea Tarik",
+                "price": 25
+              }
+            ],
+            "id_name": "Seri teh"
+          },
+          {
+            "en": "Milk series",
+            "items": [
+              {
+                "id": "chocolate",
+                "name": "Chocolate",
+                "price": 30,
+                "tags": [
+                  "rec"
+                ],
+                "variants": [
+                  "hot",
+                  "ice"
+                ]
+              },
+              {
+                "id": "matcha",
+                "name": "Matcha",
+                "price": 30,
+                "image": "/images/menu/ice-matcha.webp",
+                "variants": [
+                  "hot",
+                  "ice"
+                ]
+              },
+              {
+                "id": "ice-cookies-cream",
+                "name": "Ice Cookies & Cream",
+                "price": 30
+              },
+              {
+                "id": "berry-white",
+                "name": "Berry White",
+                "price": 30
+              },
+              {
+                "id": "oat-matcha-caramel",
+                "name": "Oat Matcha Caramel",
+                "price": 30,
+                "tags": [
+                  "oat"
+                ]
+              }
+            ],
+            "id_name": "Seri susu"
+          }
+        ],
+        "id_name": "Non Kopi"
+      },
+      {
+        "id": "refreshment",
+        "en": "Refreshment",
+        "emoji": "🧃",
+        "groups": [
+          {
+            "en": "Sparkling",
+            "items": [
+              {
+                "id": "ice-unicorn-spark",
+                "name": "Ice Unicorn Spark",
+                "price": 25,
+                "tags": [
+                  "rec"
+                ],
+                "desc": {
+                  "en": "Sparkling water-based drink with hints of berries and citrus.",
+                  "id": "Minuman soda dengan sentuhan beri dan jeruk."
+                },
+                "image": "/images/menu/ice-unicorn-spark.webp"
+              },
+              {
+                "id": "ice-yuzu",
+                "name": "Ice Yuzu",
+                "price": 25
+              },
+              {
+                "id": "ice-berry-lime",
+                "name": "Ice Berry Lime",
+                "price": 25
+              }
+            ],
+            "id_name": "Sparkling"
+          },
+          {
+            "en": "Fruity breeze series",
+            "note": {
+              "en": "Yakult-based drinks with hints of fruit.",
+              "id": "Minuman berbahan Yakult dengan sentuhan buah."
+            },
+            "items": [
+              {
+                "id": "ice-strawberry-breeze",
+                "name": "Ice Strawberry Breeze",
+                "price": 28,
+                "tags": [
+                  "rec"
+                ]
+              },
+              {
+                "id": "ice-passion-breeze",
+                "name": "Ice Passion Breeze",
+                "price": 28,
+                "tags": [
+                  "rec"
+                ]
+              },
+              {
+                "id": "ice-lychee-breeze",
+                "name": "Ice Lychee Breeze",
+                "price": 28
+              },
+              {
+                "id": "ice-summer-breeze",
+                "name": "Ice Summer Breeze",
+                "price": 28,
+                "tags": [
+                  "rec"
+                ]
+              },
+              {
+                "id": "ice-mango-breeze",
+                "name": "Ice Mango Breeze",
+                "price": 28,
+                "image": "/images/menu/ice-mango-breeze.webp"
+              }
+            ],
+            "id_name": "Seri fruity breeze"
+          }
+        ],
+        "id_name": "Penyegar"
+      },
+      {
+        "id": "meals",
+        "en": "Homey Meals",
+        "emoji": "🍛",
+        "addons": "egg +5 · mentai +5 · sambal geprek +5 · indomie +5",
+        "groups": [
+          {
+            "en": "Homey meals",
+            "items": [
+              {
+                "id": "ayam-geprek",
+                "name": "Ayam Geprek",
+                "price": 22,
+                "tags": [
+                  "rec",
+                  "spicy"
+                ],
+                "desc": {
+                  "en": "Smashed crispy chicken with fiery sambal and rice.",
+                  "id": "Ayam goreng tepung geprek dengan sambal pedas dan nasi."
+                },
+                "image": "/images/menu/ayam-geprek.webp"
+              },
+              {
+                "id": "cwie-mie",
+                "name": "Cwie Mie",
+                "price": 22,
+                "tags": [
+                  "rec"
+                ],
+                "desc": {
+                  "en": "Malang-style noodles with minced chicken and crackers.",
+                  "id": "Mie khas Malang dengan ayam cincang dan pangsit."
+                },
+                "image": "/images/menu/cwie-mie.webp"
+              },
+              {
+                "id": "chicken-katsu",
+                "name": "Chicken Katsu",
+                "price": 28,
+                "tags": [
+                  "rec"
+                ]
+              },
+              {
+                "id": "chicken-teriyaki",
+                "name": "Chicken Teriyaki",
+                "price": 28
+              },
+              {
+                "id": "beef-katsu",
+                "name": "Beef Katsu",
+                "price": 28
+              },
+              {
+                "id": "nila-fillet",
+                "name": "Nila Fillet",
+                "price": 28,
+                "variants": [
+                  "grilled",
+                  "spicy"
+                ]
+              },
+              {
+                "id": "pampis-tuna",
+                "name": "Pampis Tuna",
+                "price": 28
+              },
+              {
+                "id": "nasi-bakmoy",
+                "name": "Nasi Bakmoy",
+                "price": 28,
+                "tags": [
+                  "rec"
+                ]
+              },
+              {
+                "id": "rawon-daging",
+                "name": "Rawon Daging",
+                "price": 30,
+                "desc": {
+                  "en": "Special rawon beef soup, bean sprouts, spicy chili sauce, crunchy crackers, fried tempeh and fluffy rice.",
+                  "id": "Rawon daging spesial dengan tauge, sambal, kerupuk, tempe goreng, dan nasi pulen."
+                }
+              },
+              {
+                "id": "chicken-steak",
+                "name": "Chicken Steak",
+                "price": 30,
+                "desc": {
+                  "en": "Chicken steak cutlets with BBQ sauce, potato wedges and vegetables.",
+                  "id": "Steak ayam dengan saus BBQ, potato wedges, dan sayuran."
+                }
+              },
+              {
+                "id": "ayam-sambal-matah",
+                "name": "Ayam Sambal Matah",
+                "price": 30,
+                "tags": [
+                  "spicy"
+                ],
+                "desc": {
+                  "en": "White rice with chicken accompanied by sambal matah.",
+                  "id": "Nasi putih dengan ayam dan sambal matah."
+                },
+                "image": "/images/menu/ayam-sambal-matah.webp"
+              },
+              {
+                "id": "ayam-sambal-embe",
+                "name": "Ayam Sambal Embe",
+                "price": 30,
+                "tags": [
+                  "spicy"
+                ],
+                "desc": {
+                  "en": "White rice with chicken accompanied by embe chili sauce.",
+                  "id": "Nasi putih dengan ayam dan sambal embe."
+                },
+                "image": "/images/menu/ayam-sambal-embe.webp"
+              },
+              {
+                "id": "bakso-kuah",
+                "name": "Bakso Kuah",
+                "price": 30,
+                "tags": [
+                  "new"
+                ],
+                "desc": {
+                  "en": "Chicken meatball soup with white rice.",
+                  "id": "Sup bakso ayam dengan nasi putih."
+                },
+                "image": "/images/menu/bakso-kuah.webp"
+              },
+              {
+                "id": "sate-lilit",
+                "name": "Sate Lilit",
+                "price": 30,
+                "tags": [
+                  "new"
+                ],
+                "desc": {
+                  "en": "White rice with satay lilit accompanied by sambal matah.",
+                  "id": "Nasi putih dengan sate lilit dan sambal matah."
+                },
+                "image": "/images/menu/sate-lilit.webp"
+              },
+              {
+                "id": "cumi-udang",
+                "name": "Cumi Udang",
+                "price": 38,
+                "tags": [
+                  "new",
+                  "rec"
+                ],
+                "desc": {
+                  "en": "White rice with fried shrimp and black squid, served with crispy kremes.",
+                  "id": "Nasi putih dengan udang goreng dan cumi hitam, disajikan dengan kremesan."
+                },
+                "image": "/images/menu/cumi-udang.webp"
+              },
+              {
+                "id": "empal-udang",
+                "name": "Empal Udang",
+                "price": 38,
+                "tags": [
+                  "new",
+                  "rec"
+                ],
+                "desc": {
+                  "en": "White rice with fried empal beef and fried shrimp, served with crispy kremes.",
+                  "id": "Nasi putih dengan empal goreng dan udang goreng, disajikan dengan kremesan."
+                },
+                "image": "/images/menu/empal-udang.webp"
+              },
+              {
+                "id": "ayam-kremes",
+                "name": "Ayam Kremes",
+                "price": 38,
+                "tags": [
+                  "new"
+                ],
+                "desc": {
+                  "en": "White rice with fried chicken and crispy kremes.",
+                  "id": "Nasi putih dengan ayam goreng dan kremesan."
+                },
+                "image": "/images/menu/ayam-kremes.webp"
+              }
+            ],
+            "id_name": "Makanan rumahan"
+          },
+          {
+            "en": "Indomie",
+            "items": [
+              {
+                "id": "indomie-kuah-kari",
+                "name": "Indomie Kuah Kari",
+                "price": 15,
+                "image": "/images/menu/indomie-kuah-kari.webp"
+              },
+              {
+                "id": "indomie-kuah-keju",
+                "name": "Indomie Kuah Keju",
+                "price": 15,
+                "image": "/images/menu/indomie-kuah-keju.webp"
+              },
+              {
+                "id": "indomie-saos-wijen",
+                "name": "Indomie Saos Wijen",
+                "price": 15,
+                "image": "/images/menu/indomie-saos-wijen.webp"
+              }
+            ],
+            "id_name": "Indomie"
+          }
+        ],
+        "id_name": "Makanan"
+      },
+      {
+        "id": "appetizer",
+        "en": "Appetizer",
+        "emoji": "🥟",
+        "groups": [
+          {
+            "en": "Fried",
+            "items": [
+              {
+                "id": "pisang-krispi-sambal-roa",
+                "name": "Pisang Krispi Sambal Roa",
+                "price": 20,
+                "tags": [
+                  "new"
+                ]
+              },
+              {
+                "id": "pisang-wijen",
+                "name": "Pisang Wijen",
+                "price": 20
+              },
+              {
+                "id": "sesame-ball",
+                "name": "Sesame Ball",
+                "price": 20,
+                "tags": [
+                  "rec"
+                ],
+                "image": "/images/menu/sesame-ball.webp",
+                "variants": [
+                  "salted egg",
+                  "red bean"
+                ]
+              },
+              {
+                "id": "crispy-chicken-meatball",
+                "name": "Crispy Chicken Meatball",
+                "price": 20,
+                "tags": [
+                  "rec"
+                ],
+                "image": "/images/menu/crispy-chicken-meatball.webp"
+              },
+              {
+                "id": "french-fries",
+                "name": "French Fries",
+                "price": 24,
+                "tags": [
+                  "rec"
+                ]
+              },
+              {
+                "id": "fried-gyoza",
+                "name": "Fried Gyoza",
+                "price": 18,
+                "image": "/images/menu/gyoza.webp"
+              },
+              {
+                "id": "tahu-walik",
+                "name": "Tahu Walik",
+                "price": 20,
+                "image": "/images/menu/tahu-walik.webp"
+              },
+              {
+                "id": "french-fries-cheesy",
+                "name": "French Fries Cheesy",
+                "price": 24
+              },
+              {
+                "id": "chic-bite-regular",
+                "name": "Chic Bite Regular",
+                "price": 25
+              },
+              {
+                "id": "chic-bite-large",
+                "name": "Chic Bite Large",
+                "price": 35
+              }
+            ],
+            "id_name": "Gorengan"
+          },
+          {
+            "en": "Toast",
+            "items": [
+              {
+                "id": "sweet-toast",
+                "name": "Sweet Toast",
+                "price": 15
+              },
+              {
+                "id": "savoury-toast",
+                "name": "Savoury Toast",
+                "price": 22,
+                "desc": {
+                  "en": "Egg & cheese toast.",
+                  "id": "Roti panggang telur & keju."
+                },
+                "image": "/images/menu/savoury-toast.webp"
+              }
+            ],
+            "id_name": "Roti panggang"
+          },
+          {
+            "en": "Non fried",
+            "items": [
+              {
+                "id": "steam-gyoza",
+                "name": "Steam Gyoza",
+                "price": 15
+              },
+              {
+                "id": "siomay",
+                "name": "Siomay",
+                "price": 20
+              },
+              {
+                "id": "dimsum",
+                "name": "Dimsum",
+                "price": 20
+              }
+            ],
+            "id_name": "Kukus"
+          }
+        ],
+        "id_name": "Camilan"
+      },
+      {
+        "id": "dessert",
+        "en": "Dessert",
+        "emoji": "🍨",
+        "addons": "topping oreo +5 · topping strawberry pulp +5",
+        "groups": [
+          {
+            "en": "Dessert",
+            "items": [
+              {
+                "id": "ronde",
+                "name": "Ronde",
+                "price": 15,
+                "tags": [
+                  "rec"
+                ],
+                "desc": {
+                  "en": "Warm ginger soup with glutinous rice balls.",
+                  "id": "Wedang jahe hangat dengan bola ketan."
+                }
+              },
+              {
+                "id": "ice-cream",
+                "name": "Ice Cream",
+                "price": 10,
+                "desc": {
+                  "en": "Vanilla.",
+                  "id": "Vanila."
+                },
+                "image": "/images/menu/dessert.webp"
+              },
+              {
+                "id": "ice-cream-affogato",
+                "name": "Ice Cream Affogato",
+                "price": 20,
+                "tags": [
+                  "rec"
+                ],
+                "desc": {
+                  "en": "Vanilla ice cream with a shot of espresso.",
+                  "id": "Es krim vanila dengan seshot espresso."
+                }
+              }
+            ],
+            "id_name": "Dessert"
+          }
+        ],
+        "id_name": "Dessert"
+      }
+    ],
+    "promo": {
+      "en": {
+        "title": "Student Treats",
+        "body": "Show your student card. Selected drinks, only 15k."
+      },
+      "id": {
+        "title": "Student Treats",
+        "body": "Tunjukkan kartu pelajarmu. Minuman pilihan cuma 15k."
+      },
+      "price": 15,
+      "items": [
+        "ice-rum-latte",
+        "ice-vanilla-latte",
+        "java-tea",
+        "hot-vietnam-drip",
+        "ice-latte"
+      ],
+      "images": [
+        "/images/menu/ice-rum-latte.webp",
+        "/images/menu/ice-vanilla-latte.webp",
+        "/images/menu/ice-java-tea.webp",
+        "/images/menu/hot-vietnam-drip.webp",
+        "/images/menu/ice-latte.webp"
+      ]
+    }
+  }
 }

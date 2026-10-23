@@ -9,13 +9,16 @@ import { getToken, hashPin, setToken } from "./auth";
 import CollectionEditor from "./CollectionEditor";
 import { Bilingual, Field, ImagePicker, LinesInput, ParagraphsInput, slugify, TextArea, TextInput, Toggle } from "./fields";
 import { checkAccess, commitFiles, CONTENT_PATH, currentContentSha, fetchContent, latestDeploy, utf8ToBase64, type DeployRun } from "./github";
+import { BranchesSettings, CardsEditor, MenuEditor } from "./editors";
 import { prepareImage, uploadPath } from "./images";
 
-type Tab = "overview" | "events" | "articles" | "testimonials" | "settings";
+type Tab = "overview" | "cards" | "menu" | "events" | "articles" | "testimonials" | "settings";
 type Pending = Record<string, { base64: string; previewUrl: string }>;
 
 const TABS: { id: Tab; label: string; icon: string }[] = [
   { id: "overview", label: "Ringkasan", icon: "◎" },
+  { id: "cards", label: "Kartu Harapan", icon: "♡" },
+  { id: "menu", label: "Menu", icon: "☕" },
   { id: "events", label: "Acara", icon: "◷" },
   { id: "articles", label: "Artikel", icon: "✎" },
   { id: "testimonials", label: "Testimoni", icon: "❝" },
@@ -401,7 +404,13 @@ export default function Dashboard({ initial, library, onLogout }: { initial: Con
             />
           )}
 
+          {tab === "cards" && <CardsEditor content={content} onChange={(v) => patch("cards", v)} />}
+
+          {tab === "menu" && <MenuEditor content={content} onChange={(v) => patch("menu", v)} picker={{ library: gallery, resolve, onUpload: upload }} />}
+
           {tab === "settings" && (
+            <div className="max-w-3xl space-y-6">
+            <BranchesSettings content={content} onChange={(settings) => patch("settings", settings)} />
             <Settings
               content={content}
               onChange={(settings) => patch("settings", settings)}
@@ -414,6 +423,7 @@ export default function Dashboard({ initial, library, onLogout }: { initial: Con
                 connect(t, { reload: !dirty });
               }}
             />
+            </div>
           )}
         </main>
       </div>

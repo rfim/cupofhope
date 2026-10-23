@@ -59,12 +59,12 @@ export default async function EventDetailPage({ params }: Params) {
   return (
     <>
       <JsonLd data={schema} />
-      <section className="mx-auto grid max-w-[1050px] gap-10 px-6 pb-16 pt-32 md:grid-cols-[1fr_318px] md:gap-12 md:pt-36">
+      <section className="mx-auto grid max-w-[1050px] gap-10 px-5 pb-16 pt-20 md:grid-cols-[1fr_318px] md:gap-12 md:px-6 md:pt-36">
         <div>
           <Link href={`/${locale}/events`} className="mb-6 inline-flex items-center gap-2 text-sm text-neutral-500 hover:text-black">
             <ArrowRightIcon className="h-3.5 w-3.5 rotate-180" /> {dict.event.back}
           </Link>
-          <h1 className="text-4xl font-semibold leading-tight md:text-5xl">{e.title}</h1>
+          <h1 className="text-[32px] font-semibold leading-[1.1] tracking-tight md:text-5xl md:leading-tight">{e.title}</h1>
           <div className="relative mt-6 aspect-[16/9] overflow-hidden rounded-2xl">
             <Image src={event.image} alt={e.title} fill priority sizes="(min-width: 768px) 690px, 100vw" className="object-cover" />
           </div>
@@ -121,7 +121,22 @@ export default async function EventDetailPage({ params }: Params) {
         </aside>
       </section>
 
-      <section className="mx-auto max-w-[1050px] px-6 py-16">
+      {/* Phones: keep registration one tap away */}
+      {!event.past && (
+        <div className="fixed inset-x-0 bottom-[calc(62px+env(safe-area-inset-bottom))] z-40 border-t border-black/[0.06] bg-white/95 px-5 py-3 backdrop-blur-xl md:hidden">
+          <div className="flex items-center gap-4">
+            <div className="min-w-0 flex-1 leading-tight">
+              <p className="truncate text-sm font-semibold">{formatDate(event.date, locale)}</p>
+              <p className="truncate text-xs text-black/50">{event.time}{event.price ? ` · ${event.price}` : ""}</p>
+            </div>
+            <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="shrink-0 rounded-full bg-primary px-6 py-3 text-sm font-semibold">
+              {dict.cta.register_now}
+            </a>
+          </div>
+        </div>
+      )}
+
+      <section className="mx-auto max-w-[1050px] px-5 pb-40 pt-8 md:px-6 md:py-16">
         <h2 className="text-3xl font-semibold md:text-4xl">{dict.event.related_title}</h2>
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           {relatedEvents(slug).map((r) => <EventCard key={r.slug} event={r} locale={locale} dict={dict} />)}

@@ -14,13 +14,18 @@
       "services_title": "Services | Cup of Hope",
       "services_description": "Explore how Cup of Hope serves our community in Surabaya through our café, event space, and programs. Connection, hope, and belonging for everyone.",
       "our_team_title": "Our Team | Cup of Hope",
-      "our_team_description": "Meet the people behind Cup of Hope. Our team brings hope, connection, and community to Surabaya through our café and events. Get to know us."
+      "our_team_description": "Meet the people behind Cup of Hope. Our team brings hope, connection, and community to Surabaya through our café and events. Get to know us.",
+      "cards_title": "Cards of Hope | Cup of Hope",
+      "cards_description": "Collect Cards of Hope: words of encouragement from the Cup of Hope team in Surabaya. Open a new card every day.",
+      "menu_title": "Menu | Cup of Hope",
+      "menu_description": "Coffee, non-coffee, refreshments, homey meals, appetizers and desserts at Cup of Hope Surabaya and Malang."
     },
     "nav": {
       "home": "Home",
       "about": "About Us",
       "events": "Events",
-      "article": "Article"
+      "article": "Article",
+      "cards": "Cards"
     },
     "cta": {
       "contact_us": "Contact Us",
@@ -121,7 +126,101 @@
       "read_more": "Read More"
     },
     "under_development": "This page is under development. Please check back soon.",
-    "whatsapp_float": "Chat with us on WhatsApp"
+    "whatsapp_float": "Chat with us on WhatsApp",
+    "cards": {
+      "nav": "Cards",
+      "title": "Cards of Hope",
+      "intro": "Every cup at our café comes with a Card of Hope. Collect them here: a new card waits for you every day.",
+      "collected": "collected",
+      "open_pack": "Open today's card",
+      "next_pack": "Next card in",
+      "tap_to_open": "Tap to open",
+      "new_card": "New card!",
+      "duplicate": "You already have this one. Keep it close today.",
+      "view_collection": "View collection",
+      "close": "Close",
+      "share": "Share",
+      "locked": "Not collected yet",
+      "redeem_title": "Got a card at the café?",
+      "redeem_hint": "Enter the code printed on it to add it to your collection.",
+      "redeem_placeholder": "Card code",
+      "redeem_button": "Unlock",
+      "redeem_wrong": "That code doesn't match any card.",
+      "redeem_ok": "Unlocked!",
+      "filter_all": "All",
+      "filter_owned": "Mine",
+      "rarity": {
+        "common": "Common",
+        "rare": "Rare",
+        "epic": "Epic",
+        "legendary": "Legendary"
+      },
+      "welcome": "Welcome gift",
+      "welcome_body": "Here's your first card. Come back every day for a new one.",
+      "collected_on": "Collected",
+      "tap_flip": "Tap the card to flip it",
+      "daily_pack": "Daily Pack",
+      "your_cards": "Your cards",
+      "see_all": "See all",
+      "come_back": "Come back tomorrow"
+    },
+    "mobile": {
+      "morning": "Good morning",
+      "afternoon": "Good afternoon",
+      "evening": "Good evening",
+      "tabs": {
+        "home": "Home",
+        "events": "Events",
+        "cards": "Cards",
+        "stories": "Stories",
+        "about": "About",
+        "menu": "Menu"
+      },
+      "our_story": "Our story",
+      "our_story_body": "Born in 2021 to bring hope to Surabaya, one cup at a time.",
+      "read_story": "Read our story",
+      "stories_title": "Stories of Hope",
+      "events_title": "Happening soon",
+      "chat": "Chat with us",
+      "late_afternoon": "Good afternoon",
+      "menu_title": "Barista picks",
+      "directions": "Directions to",
+      "open_now": "Open now",
+      "closing_soon": "Closing soon",
+      "closed_now": "Closed",
+      "until": "until",
+      "opens": "opens"
+    },
+    "menu": {
+      "title": "Menu",
+      "subtitle": "Every cup comes with a Card of Hope.",
+      "search": "Search the menu",
+      "all": "All",
+      "picks": "Barista picks",
+      "addons": "Add-ons",
+      "tags": {
+        "rec": "Recommended",
+        "spicy": "Spicy",
+        "oat": "Oat",
+        "new": "New"
+      },
+      "add": "Add",
+      "added": "Added",
+      "order_title": "Your order",
+      "order_hint": "Show this list to our barista at the counter.",
+      "order_items": "items",
+      "order_total": "Total",
+      "order_clear": "Clear",
+      "order_send": "Send via WhatsApp",
+      "order_copy": "Copy list",
+      "order_empty": "Nothing here yet. Tap + on anything you like.",
+      "note": "Prices in thousand rupiah. Order and pay at the counter.",
+      "variant": "Choose",
+      "sold_out": "Sold out",
+      "no_results": "No items match",
+      "hours": "Opening hours",
+      "closed_sunday": "Mon–Sat 11:00–21:00 · Sunday closed"
+    }
   },
   "id": {
     "metadata": {
@@ -138,13 +237,18 @@
       "services_title": "Layanan | Cup of Hope",
       "services_description": "Jelajahi cara Cup of Hope melayani komunitas di Surabaya melalui kafe, ruang acara, dan program. Koneksi, harapan, dan rasa memiliki untuk semua.",
       "our_team_title": "Tim Kami | Cup of Hope",
-      "our_team_description": "Kenali orang-orang di balik Cup of Hope. Tim kami membawa harapan, koneksi, dan komunitas ke Surabaya melalui kafe dan acara kami. Kenali kami."
+      "our_team_description": "Kenali orang-orang di balik Cup of Hope. Tim kami membawa harapan, koneksi, dan komunitas ke Surabaya melalui kafe dan acara kami. Kenali kami.",
+      "cards_title": "Kartu Harapan | Cup of Hope",
+      "cards_description": "Kumpulkan Kartu Harapan: kata-kata penyemangat dari tim Cup of Hope di Surabaya. Buka kartu baru setiap hari.",
+      "menu_title": "Menu | Cup of Hope",
+      "menu_description": "Kopi, non-kopi, minuman segar, makanan rumahan, camilan, dan dessert di Cup of Hope Surabaya dan Malang."
     },
     "nav": {
       "home": "Beranda",
       "about": "Tentang Kami",
       "events": "Acara",
-      "article": "Artikel"
+      "article": "Artikel",
+      "cards": "Kartu"
     },
     "cta": {
       "contact_us": "Hubungi Kami",
@@ -244,6 +348,100 @@
       "read_more": "Baca Selengkapnya"
     },
     "under_development": "This page is under development. Please check back soon.",
-    "whatsapp_float": "Chat dengan kami di WhatsApp"
+    "whatsapp_float": "Chat dengan kami di WhatsApp",
+    "cards": {
+      "nav": "Kartu",
+      "title": "Kartu Harapan",
+      "intro": "Setiap cangkir di kafe kami datang bersama Kartu Harapan. Kumpulkan di sini: kartu baru menunggumu setiap hari.",
+      "collected": "terkumpul",
+      "open_pack": "Buka kartu hari ini",
+      "next_pack": "Kartu berikutnya dalam",
+      "tap_to_open": "Ketuk untuk membuka",
+      "new_card": "Kartu baru!",
+      "duplicate": "Kamu sudah punya kartu ini. Simpan baik-baik hari ini.",
+      "view_collection": "Lihat koleksi",
+      "close": "Tutup",
+      "share": "Bagikan",
+      "locked": "Belum terkumpul",
+      "redeem_title": "Dapat kartu di kafe?",
+      "redeem_hint": "Masukkan kode yang tertera untuk menambahkannya ke koleksimu.",
+      "redeem_placeholder": "Kode kartu",
+      "redeem_button": "Buka",
+      "redeem_wrong": "Kode tidak cocok dengan kartu mana pun.",
+      "redeem_ok": "Terbuka!",
+      "filter_all": "Semua",
+      "filter_owned": "Milikku",
+      "rarity": {
+        "common": "Biasa",
+        "rare": "Langka",
+        "epic": "Epik",
+        "legendary": "Legendaris"
+      },
+      "welcome": "Hadiah selamat datang",
+      "welcome_body": "Ini kartu pertamamu. Kembali setiap hari untuk kartu baru.",
+      "collected_on": "Didapat",
+      "tap_flip": "Ketuk kartu untuk membalik",
+      "daily_pack": "Paket Harian",
+      "your_cards": "Kartumu",
+      "see_all": "Lihat semua",
+      "come_back": "Kembali besok"
+    },
+    "mobile": {
+      "morning": "Selamat pagi",
+      "afternoon": "Selamat siang",
+      "evening": "Selamat malam",
+      "tabs": {
+        "home": "Beranda",
+        "events": "Acara",
+        "cards": "Kartu",
+        "stories": "Cerita",
+        "about": "Tentang",
+        "menu": "Menu"
+      },
+      "our_story": "Kisah kami",
+      "our_story_body": "Lahir di 2021 untuk membawa harapan bagi Surabaya, satu cangkir sekali waktu.",
+      "read_story": "Baca kisah kami",
+      "stories_title": "Kisah Harapan",
+      "events_title": "Segera hadir",
+      "chat": "Chat dengan kami",
+      "late_afternoon": "Selamat sore",
+      "menu_title": "Pilihan barista",
+      "directions": "Petunjuk arah ke",
+      "open_now": "Buka",
+      "closing_soon": "Segera tutup",
+      "closed_now": "Tutup",
+      "until": "sampai",
+      "opens": "buka"
+    },
+    "menu": {
+      "title": "Menu",
+      "subtitle": "Setiap cangkir datang bersama Kartu Harapan.",
+      "search": "Cari menu",
+      "all": "Semua",
+      "picks": "Pilihan barista",
+      "addons": "Tambahan",
+      "tags": {
+        "rec": "Rekomendasi",
+        "spicy": "Pedas",
+        "oat": "Oat",
+        "new": "Baru"
+      },
+      "add": "Tambah",
+      "added": "Ditambah",
+      "order_title": "Pesananmu",
+      "order_hint": "Tunjukkan daftar ini ke barista di kasir.",
+      "order_items": "item",
+      "order_total": "Total",
+      "order_clear": "Hapus",
+      "order_send": "Kirim via WhatsApp",
+      "order_copy": "Salin daftar",
+      "order_empty": "Belum ada apa-apa. Ketuk + pada menu favoritmu.",
+      "note": "Harga dalam ribu rupiah. Pesan dan bayar di kasir.",
+      "variant": "Pilih",
+      "sold_out": "Habis",
+      "no_results": "Tidak ada menu yang cocok",
+      "hours": "Jam buka",
+      "closed_sunday": "Sen–Sab 11.00–21.00 · Minggu tutup"
+    }
   }
 }

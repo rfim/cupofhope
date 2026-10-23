@@ -1,10 +1,14 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { HoldRing } from "@/components/mobile/MobileTabBar";
+import { useLongPress } from "@/lib/useLongPress";
 import { cards } from "@/data";
 import type { Dictionary, Locale } from "@/i18n";
 import { asset } from "@/lib/asset";
 import { canDrawToday, claimWelcome, drawDaily, loadCollection, msUntilNextDraw, useCollection } from "@/lib/collection";
+import CupCardIcon from "./CupCardIcon";
 import PackOpening from "./PackOpening";
 
 function countdown(ms: number) {
@@ -18,6 +22,9 @@ export default function DailyOrb({ locale, dict, size = 132 }: { locale: Locale;
   const [pack, setPack] = useState<"daily" | "welcome" | null>(null);
   const [left, setLeft] = useState(0);
   const t = dict.cards;
+  const router = useRouter();
+  // Easter egg: hold the orb for 1.5 s to open the admin PIN pad.
+  const hold = useLongPress(() => router.push("/admin/"));
 
   useEffect(() => {
     const tick = () => setLeft(msUntilNextDraw());
@@ -36,10 +43,11 @@ export default function DailyOrb({ locale, dict, size = 132 }: { locale: Locale;
   return (
     <div className="flex flex-col items-center">
       <button
-        onClick={() => ready && setPack(isNew ? "welcome" : "daily")}
-        disabled={!ready}
+        onClick={(e) => !hold.consumeClick(e) && ready && setPack(isNew ? "welcome" : "daily")}
+        {...hold.handlers}
+        aria-disabled={!ready}
         aria-label={ready ? t.open_pack : `${t.next_pack} ${countdown(left)}`}
-        className="group relative disabled:cursor-default"
+        className="no-callout group relative aria-disabled:cursor-default"
         style={{ width: size, height: size }}
       >
         <svg className="absolute inset-0 -rotate-90" viewBox={`0 0 ${size} ${size}`} aria-hidden>
@@ -56,14 +64,14 @@ export default function DailyOrb({ locale, dict, size = 132 }: { locale: Locale;
             className="transition-[stroke-dasharray] duration-1000"
           />
         </svg>
+        <HoldRing active={hold.holding} inset={2} />
         <span
-          className={`orb absolute inset-[12px] rounded-full ${ready ? "orb-ready" : ""}`}
+          className={`orb absolute inset-[12px] rounded-full ${ready ? "orb-ready" : ""} ${ready ? "" : "orb-idle"}`}
           style={{ background: "radial-gradient(circle at 32% 28%, #fffbe6 0%, #fde871 28%, #f7b733 62%, #e0742b 100%)" }}
         />
         <span className="absolute inset-0 flex flex-col items-center justify-center text-[#3b2a06]">
           {ready ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={asset("/images/logos/coh_logo.png")} alt="" className="h-10 w-10 mix-blend-multiply transition-transform group-active:scale-90" data-anim="wiggle" />
+            <CupCardIcon className="h-12 w-12 drop-shadow-[0_2px_3px_rgb(90_50_0/0.35)] transition-transform group-active:scale-90" back="rgb(59 42 6 / 0.35)" />
           ) : (
             <>
               <span className="text-[10px] font-medium uppercase tracking-[0.18em] opacity-70">{t.next_pack}</span>

@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import CupCardIcon from "@/components/cards/CupCardIcon";
 import { useCardReady } from "@/components/cards/DailyOrb";
 import type { Dictionary, Locale } from "@/i18n";
+import { useLongPress } from "@/lib/useLongPress";
 
 const icons = {
   home: <path d="M4 11.5 12 5l8 6.5V19a1 1 0 0 1-1 1h-4.5v-5h-5v5H5a1 1 0 0 1-1-1Z" />,
@@ -16,6 +18,9 @@ const icons = {
 export default function MobileTabBar({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const pathname = usePathname();
   const ready = useCardReady();
+  const router = useRouter();
+  // Easter egg: hold the Cards button for 1.5 s to open the admin PIN pad.
+  const hold = useLongPress(() => router.push("/admin/"));
   const t = dict.mobile.tabs;
   const at = (seg: string) => (seg === "" ? /^\/(en|id)\/?$/.test(pathname) : pathname.startsWith(`/${locale}/${seg}`));
 
@@ -46,15 +51,20 @@ export default function MobileTabBar({ locale, dict }: { locale: Locale; dict: D
       <div className="mx-auto flex h-[62px] max-w-md items-stretch px-2">
         {tab("", t.home, icons.home)}
         {tab("menu", t.menu, icons.menu)}
-        <Link href={`/${locale}/cards`} aria-current={cardsActive ? "page" : undefined} className="relative flex flex-1 flex-col items-center text-[10px] font-medium">
+        <Link
+          href={`/${locale}/cards`}
+          aria-current={cardsActive ? "page" : undefined}
+          onClick={hold.consumeClick}
+          {...hold.handlers}
+          draggable={false}
+          className="no-callout relative flex flex-1 flex-col items-center text-[10px] font-medium"
+        >
           <span
-            className={`-mt-6 flex h-14 w-14 items-center justify-center rounded-full shadow-[0_10px_24px_-8px_rgb(224_116_43/0.7)] ring-4 ring-white transition-transform ${cardsActive ? "scale-105" : ""}`}
+            className={`relative -mt-6 flex h-14 w-14 items-center justify-center rounded-full shadow-[0_10px_24px_-8px_rgb(224_116_43/0.7)] ring-4 ring-white transition-transform ${cardsActive ? "scale-105" : ""}`}
             style={{ background: "radial-gradient(circle at 32% 28%, #fffbe6 0%, #fde871 30%, #f7b733 70%, #e0742b 100%)" }}
           >
-            <svg viewBox="0 0 24 24" className="h-6 w-6 text-[#3b2a06]" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinejoin="round" aria-hidden data-anim="flip">
-              <rect x="7" y="4" width="11" height="15" rx="2" transform="rotate(8 12 12)" />
-              <rect x="5" y="5" width="11" height="15" rx="2" className="fill-[#fffbe6]" />
-            </svg>
+            <CupCardIcon className="h-7 w-7 drop-shadow-[0_1px_1px_rgb(0_0_0/0.25)]" back="rgb(59 42 6 / 0.35)" />
+            <HoldRing active={hold.holding} />
             {ready && <span className="absolute right-[calc(50%-30px)] top-[-22px] h-3 w-3 rounded-full border-2 border-white bg-[#e0582b]" aria-label="new" />}
           </span>
           <span className={`mt-1 ${cardsActive ? "text-ink" : "text-black/40"}`}>{t.cards}</span>
@@ -63,5 +73,14 @@ export default function MobileTabBar({ locale, dict }: { locale: Locale; dict: D
         {tab("article", t.stories, icons.stories)}
       </div>
     </nav>
+  );
+}
+
+/** Thin ring that fills while the button is held (the admin easter egg). */
+export function HoldRing({ active, inset = -6 }: { active: boolean; inset?: number }) {
+  return (
+    <svg className="pointer-events-none absolute -rotate-90 overflow-visible" style={{ inset }} viewBox="0 0 100 100" aria-hidden>
+      <circle cx="50" cy="50" r="48" fill="none" stroke="#1d1b18" strokeWidth="3" strokeLinecap="round" pathLength={100} className={`hold-ring ${active ? "hold-ring-on" : ""}`} />
+    </svg>
   );
 }

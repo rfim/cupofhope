@@ -36,7 +36,7 @@ Menu photos live in `public/images/menu/`. They are cut out and centered on a so
 
 ## Admin panel (easter egg)
 
-Type **`open sesame`** anywhere on the site (or tap the footer logo 5 times on a phone) to open `/admin/`, then enter the PIN. The default PIN is **111111**; change it under Pengaturan → Ganti PIN.
+Type **`open sesame`** anywhere on the site, **press and hold the cup card icon** (the raised Cards tab or the orb) for 1.5 seconds, or tap the footer logo 5 times to open `/admin/`, then enter the PIN. The default PIN is **111111**; change it under Pengaturan → Ganti PIN.
 
 From the panel you can add, edit, reorder, duplicate and delete Cards of Hope (with live preview and unlock codes), menu items (price, labels, photo, sold out), events, articles and testimonials in both languages, set branch hours, upload images (resized to WebP in the browser), and edit the WhatsApp link, email and impact stats. **Publikasikan** commits all changes to `main` as one commit, and GitHub Pages redeploys in about 1–2 minutes.
 

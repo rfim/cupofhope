@@ -321,3 +321,27 @@ a:active img, button:not(:disabled):active img {
   a:active, button:active, [role="button"]:active, .tap-card:active { scale: none; rotate: none; }
   .icon-pop, .icon-spin, .icon-wiggle, .icon-bounce, .icon-flip { animation: none; }
 }
+
+/* ---------- Long-press easter egg ---------- */
+.no-callout {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.hold-ring {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  opacity: 0;
+  transition: stroke-dashoffset 0.15s ease, opacity 0.15s ease;
+}
+
+.hold-ring-on {
+  stroke-dashoffset: 0;
+  opacity: 0.85;
+  transition: stroke-dashoffset 1.5s linear, opacity 0.2s ease;
+}
+
+.orb-idle {
+  filter: saturate(0.35) brightness(1.05);
+}

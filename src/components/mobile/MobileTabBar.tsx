@@ -60,12 +60,12 @@ export default function MobileTabBar({ locale, dict }: { locale: Locale; dict: D
           className="no-callout relative flex flex-1 flex-col items-center text-[10px] font-medium"
         >
           <span
-            className={`relative -mt-6 flex h-14 w-14 items-center justify-center rounded-full shadow-[0_10px_24px_-8px_rgb(224_116_43/0.7)] ring-4 ring-white transition-transform ${cardsActive ? "scale-105" : ""}`}
+            className={`relative -mt-7 flex h-[60px] w-[60px] items-center justify-center rounded-full shadow-[0_10px_24px_-8px_rgb(224_116_43/0.7)] ring-4 ring-white transition-transform ${cardsActive ? "scale-105" : ""}`}
             style={{ background: "radial-gradient(circle at 32% 28%, #fffbe6 0%, #fde871 30%, #f7b733 70%, #e0742b 100%)" }}
           >
-            <CupCardIcon className="h-7 w-7 drop-shadow-[0_1px_1px_rgb(0_0_0/0.25)]" back="rgb(59 42 6 / 0.35)" />
+            <CupCardIcon className="h-10 w-10 drop-shadow-[0_2px_3px_rgb(150_80_0/0.35)]" />
             <HoldRing active={hold.holding} />
-            {ready && <span className="absolute right-[calc(50%-30px)] top-[-22px] h-3 w-3 rounded-full border-2 border-white bg-[#e0582b]" aria-label="new" />}
+            {ready && <span className="absolute right-0 top-0 h-3 w-3 rounded-full border-2 border-white bg-[#e0582b]" aria-label="new" />}
           </span>
           <span className={`mt-1 ${cardsActive ? "text-ink" : "text-black/40"}`}>{t.cards}</span>
         </Link>

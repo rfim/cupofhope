@@ -71,7 +71,7 @@ export default function DailyOrb({ locale, dict, size = 132 }: { locale: Locale;
         />
         <span className="absolute inset-0 flex flex-col items-center justify-center text-[#3b2a06]">
           {ready ? (
-            <CupCardIcon className="h-12 w-12 drop-shadow-[0_2px_3px_rgb(90_50_0/0.35)] transition-transform group-active:scale-90" back="rgb(59 42 6 / 0.35)" />
+            <CupCardIcon className="h-[60%] w-[60%] drop-shadow-[0_3px_6px_rgb(150_80_0/0.35)] transition-transform group-active:scale-90" />
           ) : (
             <>
               <span className="text-[10px] font-medium uppercase tracking-[0.18em] opacity-70">{t.next_pack}</span>

@@ -1,6 +1,6 @@
 /**
  * Material-style filled icon (24px grid): a white Card of Hope with the cup-of-hope logo on it,
- * a small glowing cross rising like steam, and a pale gold card tilted behind to suggest a collection.
+ * soft light rising from the cup, and a pale gold card tilted behind to suggest a collection.
  */
 export default function CupCardIcon({
   className = "h-6 w-6",
@@ -43,11 +43,9 @@ export default function CupCardIcon({
       <path d="M14.55 11.95h.9a1.95 1.95 0 0 1 0 3.9h-1.25v-1.2h1.25a.75.75 0 0 0 0-1.5h-.9Z" fill={cup} stroke={edge} strokeWidth=".45" strokeLinejoin="round" />
       {/* rim opening */}
       <ellipse cx="10.45" cy="11.45" rx="3.2" ry=".72" fill="#fff6c7" />
-      {/* a small cross rising like steam, with a soft glow and rays of light */}
-      <circle cx="10.45" cy="7.3" r="2.9" fill="url(#coh-glow)" />
-      <path d="M10.45 4.75v.55M8.15 5.65l.4.4M12.75 5.65l-.4.4" stroke={light} strokeWidth=".45" strokeLinecap="round" />
-      <rect x="10.06" y="5.85" width=".78" height="4.15" rx=".39" fill={light} />
-      <rect x="9.1" y="6.95" width="2.7" height=".78" rx=".39" fill={light} />
+      {/* soft light rising from the cup */}
+      <ellipse cx="10.45" cy="8.9" rx="3.4" ry="3" fill="url(#coh-glow)" />
+      <path d="M10.45 5.35v1.3M8.1 6.15l.65.8M12.8 6.15l-.65.8M6.95 8.05l.85.35M13.95 8.05l-.85.35" stroke={light} strokeWidth=".5" strokeLinecap="round" />
       {/* rosy cheeks */}
       <circle cx="8.3" cy="14.1" r=".55" fill={blush} opacity=".5" />
       <circle cx="12.6" cy="14.1" r=".55" fill={blush} opacity=".5" />

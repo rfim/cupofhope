@@ -63,7 +63,7 @@ export default function MobileTabBar({ locale, dict }: { locale: Locale; dict: D
             className={`relative -mt-7 flex h-[60px] w-[60px] items-center justify-center rounded-full shadow-[0_10px_24px_-8px_rgb(224_116_43/0.7)] ring-4 ring-white transition-transform ${cardsActive ? "scale-105" : ""}`}
             style={{ background: "radial-gradient(circle at 32% 28%, #fffbe6 0%, #fde871 30%, #f7b733 70%, #e0742b 100%)" }}
           >
-            <CupCardIcon className="h-10 w-10 drop-shadow-[0_2px_3px_rgb(150_80_0/0.35)]" />
+            <CupCardIcon className="h-12 w-12 drop-shadow-[0_2px_3px_rgb(150_80_0/0.35)]" />
             <HoldRing active={hold.holding} />
             {ready && <span className="absolute right-0 top-0 h-3 w-3 rounded-full border-2 border-white bg-[#e0582b]" aria-label="new" />}
           </span>
